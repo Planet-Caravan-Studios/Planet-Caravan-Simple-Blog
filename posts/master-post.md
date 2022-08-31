@@ -1,9 +1,10 @@
 ---
 title: "Master Post"
-date: "2020-01-03"
+date: "2022-08-03"
 author: "Alec Reimel"
 
 image: "/images/planet-caravan-studios-logo.png"
+previewText: "Lorum ipsum dolor"
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

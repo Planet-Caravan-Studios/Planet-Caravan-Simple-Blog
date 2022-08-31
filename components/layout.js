@@ -4,12 +4,14 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
+import DesktopNav from '@components/DesktopNav'
+
 const name = 'Planet Caravan Studios'
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -26,42 +28,31 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/planet-caravan-studios-logo.png"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
+    {/* HEADER */}
+      {/*<header className={styles.header}>
+        
+        <div className={styles.logo}>
+          <Image
+            priority
+            src="/images/planet-caravan-studios-logo.png"
+            
+            height={150}
+            width={150}
+            alt={name}
+          />
+        </div>
+        
+        <Link href="/">
+          <a className="headerLink">
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/planet-caravan-studios-logo.png"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
+          </a>
+        </Link>
+
+      </header>*/}
+
+      <DesktopNav/>
+      
+      {/* BREADCRUMBS */}
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
@@ -69,6 +60,30 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+
+      {/* MAIN SECTION */}
+      <main>
+        <div className={styles.container}>
+          {children}
+        </div>
+      </main>
+
+    {/* FOOTER */}
+      <footer className={styles.footer}>
+        
+        <Link href="/">
+          <Image
+            priority
+            src="/images/planet-caravan-studios-logo.png"
+            className={styles.logo}
+            height={100}
+            width={100}
+            alt={name}
+          />
+        </Link>
+
+      </footer>
+
     </div>
   )
 }
