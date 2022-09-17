@@ -1,10 +1,13 @@
 import Head from 'next/head'
+import Date from '@components/date'
 import Layout, { siteTitle } from '@components/layout'
 import DesktopNav from '@components/DesktopNav'
+import BlogPreview from '@components/BlogPreview'
+
 import utilStyles from '@styles/utils.module.css'
 import { getSortedPostsData } from '@lib/posts'
 import Link from 'next/link'
-import Date from '@components/date'
+
 
 
 export default function Home({ allPostsData }) {
@@ -29,27 +32,14 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, date, title, author, previewText, image }) => (
             
             <li className={utilStyles.listItem} key={id}>
-              <div>
-                <Link href={`/posts/${id}`}>
-                  <a>
-                    <img 
-                      src={image} 
-                      alt="" 
-                    />
-                  </a>
-                </Link>
-              </div>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <p>
-                {previewText}
-              </p>
-              <small className={utilStyles.lightText}>
-                {author}&nbsp;|&nbsp;
-                <Date dateString={date} />
-              </small>
+              <BlogPreview
+                id={id}
+                image={image}
+                title={title}
+                previewText={previewText}
+                author={author}
+                date={date}
+              />
             </li>
 
           ))}

@@ -1,0 +1,29 @@
+@import "@styles/vars.scss";
+
+.BlogPreview{
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px $black;
+	.image{
+		background-color: $grey_1;
+		margin-bottom: 15px;
+		a{
+			display: block;;
+			width: 100%; 
+			max-width: 400px;
+			margin: auto;
+		}
+	}
+
+	.title{
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	.author{
+		font-size: $font_size_detail;
+	}
+	.date{
+		font-size: $font_size_detail;
+	}
+}

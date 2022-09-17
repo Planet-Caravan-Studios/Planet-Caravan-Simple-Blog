@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 import DesktopNav from '@components/DesktopNav'
-import SocialIcons from '@components/SocialIcons'
+import Footer from '@components/Footer'
 
 const name = 'Planet Caravan Studios'
 export const siteTitle = 'Next.js Sample Website'
@@ -69,28 +69,8 @@ export default function Layout({ children, home }) {
         </div>
       </main>
 
-    {/* FOOTER */}
-      <footer className={styles.footer}>
-        
-        <Link href="/">
-          <Image
-            priority
-            src="/images/planet-caravan-studios-logo.png"
-            className={styles.logo}
-            height={100}
-            width={100}
-            alt={name}
-          />
-        </Link>
-        <SocialIcons
-          instagram="#"
-          facebook="#"
-          twitter="#"
-          tumblr="#"
-          pinterest="#"
-        />
-
-      </footer>
+      <Footer/>
+      
 
     </div>
   )
