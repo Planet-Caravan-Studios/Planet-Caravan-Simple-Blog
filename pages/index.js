@@ -30,7 +30,14 @@ export default function Home({ allPostsData }) {
             
             <li className={utilStyles.listItem} key={id}>
               <div>
-                
+                <Link href={`/posts/${id}`}>
+                  <a>
+                    <img 
+                      src={image} 
+                      alt="" 
+                    />
+                  </a>
+                </Link>
               </div>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>

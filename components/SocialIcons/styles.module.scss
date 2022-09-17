@@ -1,0 +1,15 @@
+.list{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
+}
+
+.cell{
+		margin-right: 5px;
+		a{
+			padding: 5px;
+			font-size: 24px;
+		}
+	}
