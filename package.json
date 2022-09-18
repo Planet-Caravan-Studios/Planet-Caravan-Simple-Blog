@@ -1,8 +1,8 @@
 {
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "nvm": "nvm use 14.15.3"
   },
