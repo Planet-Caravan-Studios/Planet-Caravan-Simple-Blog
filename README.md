@@ -49,3 +49,7 @@ When you start the project, check in with the projects's Analyst for the followi
 
 ### Coming Features ###
 
+### Plugin/Library Links ###
+* [react-icons](https://react-icons.github.io/react-icons)
+* [swiper](https://swiperjs.com/)
+* 
