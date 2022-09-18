@@ -52,4 +52,4 @@ When you start the project, check in with the projects's Analyst for the followi
 ### Plugin/Library Links ###
 * [react-icons](https://react-icons.github.io/react-icons)
 * [swiper](https://swiperjs.com/)
-* 
+* [react-headroom](https://github.com/KyleAMathews/react-headroom)

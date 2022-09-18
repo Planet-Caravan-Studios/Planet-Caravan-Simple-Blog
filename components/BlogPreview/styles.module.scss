@@ -3,7 +3,7 @@
 .BlogPreview{
 	margin-bottom: 10px;
 	padding-bottom: 15px;
-	border-bottom: solid 1px $black;
+	border-bottom: solid 2px $black;
 	.image{
 		background-color: $grey_1;
 		margin-bottom: 15px;
@@ -17,9 +17,12 @@
 
 	.title{
 		display: block;
-		margin-bottom: 15px;
+		margin-bottom: 0px;
+		font-size: $font_size_heading;
 	}
-
+	.previewText{
+		font-size: $font_size_body;
+	}
 	.author{
 		font-size: $font_size_detail;
 	}

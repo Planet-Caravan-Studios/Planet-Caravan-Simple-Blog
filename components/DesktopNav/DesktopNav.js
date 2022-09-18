@@ -18,20 +18,26 @@ export default function DesktopNav({ children, home }) {
           
           <div className={componentStyles.logo}>
             <Link href="/">
-              <a className="headerLink">
+              <a>
                 <img src="/images/planet-caravan-studios-logo.png" alt=""/>
               </a>
             </Link>
             <Link href="/">
-              <a className="headerLink">
-                <h1 className={componentStyles.navButton}>{name}</h1>
+              <a className={componentStyles.siteName}>
+                <span >
+                  {name}
+                </span>
               </a>
             </Link>
           </div>
           
-          <div id="headerNavButton" className={componentStyles.navButton}>
-            <BsList color="#212121" size={50} />
+          <div className={componentStyles.buttonWrapper}>
+            <div id="headerNavButton" className={componentStyles.navButton}>
+              <BsList className={componentStyles.icon} color="#212121" size={45} />
+              <BsList className={componentStyles.iconHover} color="#fafafa" size={45} />
+            </div>
           </div>
+          
           
         </div>
         
