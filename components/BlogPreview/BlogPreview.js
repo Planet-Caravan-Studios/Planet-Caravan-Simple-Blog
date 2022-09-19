@@ -11,7 +11,7 @@ export default function BlogPreview({
   previewText, author, date
 }) {
 
-  console.log(author);
+  //console.log(author);
 
   return (
     <div className={componentStyles.BlogPreview}>

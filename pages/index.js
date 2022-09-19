@@ -3,6 +3,7 @@ import Date from '@components/date'
 import Layout, { siteTitle } from '@components/layout'
 import DesktopNav from '@components/DesktopNav'
 import BlogPreview from '@components/BlogPreview'
+/*import BlogPreviewFeed from '@components/BlogPreviewFeed'*/
 
 import utilStyles from '@styles/utils.module.css'
 import { getSortedPostsData } from '@lib/posts'
@@ -27,6 +28,7 @@ export default function Home({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <hr/>
+        {/*<BlogPreviewFeed/>*/}
         <ul className={utilStyles.list}>
           
           {allPostsData.map(({ id, date, title, author, previewText, image }) => (

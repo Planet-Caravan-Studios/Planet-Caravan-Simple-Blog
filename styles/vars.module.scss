@@ -35,6 +35,9 @@ Description:	Store SCSS vars here
 	$font_size_body:		18px;
 	$font_size_detail:		12px;
 
+	/***** Dynamic Font Sizes *****/
+		$clampMedium: clamp(18px, 3vw, 24px);
+
 /***** Letter Spacing *****/
 	$letterSpacingWide:		0.05em;
 	$letterSpacingNormal:	0.035em;
