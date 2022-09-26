@@ -19,14 +19,14 @@ export default function Home({ allPostsData }) {
         <title>Home | {siteTitle}</title>
       </Head>
 
-      <section className={utilStyles.headingMd}>
+      <section className="">
         <p>
           Planet Caravan Studios Simple Blog - this is a template meant to be very basic.
         </p>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+      <section className="">
+        <h2 className={utilStyles.headingLg}>Blog Feed</h2>
         <hr/>
         {/*<BlogPreviewFeed/>*/}
         <ul className={utilStyles.list}>

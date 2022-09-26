@@ -28,18 +28,19 @@ export default function Layout({ children, home }) {
 
       <DesktopNav/>
       
-      {/* BREADCRUMBS */}
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      
 
       {/* MAIN SECTION */}
       <main>
         <div className={styles.container}>
+          {/* BREADCRUMBS */}
+          {!home && (
+            <div className={styles.backToHome}>
+              <Link href="/">
+                <a>← Back to home</a>
+              </Link>
+            </div>
+          )}
           {children}
         </div>
       </main>

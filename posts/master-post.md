@@ -3,7 +3,7 @@ title: "Master Post"
 date: "2022-08-03"
 author: "Alec Reimel"
 
-image: "/images/planet-caravan-studios-logo.png"
+image: "/images/hm-hero-img.jpg"
 previewText: "Copy this post for any new posts"
 ---
 
@@ -29,8 +29,8 @@ previewText: "Copy this post for any new posts"
 
 ### Initialize ###
 * Use Node v14.15.3 - you can just run "npm run nvm" to set
-* npm run init-setup (runs multiple setup commands)
-* npm run dev (start and serve commands are the same as this by default, customize them if you need to)
+* npm install
+* npm run dev
 
 ### Initial Server Deploy ###
 
@@ -61,4 +61,5 @@ When you start the project, check in with the projects's Analyst for the followi
 ### Plugin/Library Links ###
 * [react-icons](https://react-icons.github.io/react-icons)
 * [swiper](https://swiperjs.com/)
-* 
+* [normalize.css](https://necolas.github.io/normalize.css/)
+* [react-headroom](https://kyleamathews.github.io/react-headroom/)

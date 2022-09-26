@@ -36,7 +36,9 @@ Description:	Store SCSS vars here
 	$font_size_detail:		12px;
 
 	/***** Dynamic Font Sizes *****/
-		$clampMedium: clamp(18px, 3vw, 24px);
+		$clampSmall: 		clamp(12px, 1.5vw, 16px);
+		$clampMedium: 	clamp(14px, 2vw, 20px);
+		$clampLarge: 	clamp(24px, 4vw, 36px);
 
 /***** Letter Spacing *****/
 	$letterSpacingWide:		0.05em;

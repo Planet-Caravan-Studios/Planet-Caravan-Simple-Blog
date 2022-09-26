@@ -48,8 +48,11 @@ When you start the project, check in with the projects's Analyst for the followi
 * Social links
 
 ### Coming Features ###
+* About Us sample page
+* Form sample page
 
 ### Plugin/Library Links ###
 * [react-icons](https://react-icons.github.io/react-icons)
 * [swiper](https://swiperjs.com/)
-* [react-headroom](https://github.com/KyleAMathews/react-headroom)
+* [normalize.css](https://necolas.github.io/normalize.css/)
+* [react-headroom](https://kyleamathews.github.io/react-headroom/)
