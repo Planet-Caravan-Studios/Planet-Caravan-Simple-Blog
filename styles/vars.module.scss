@@ -30,19 +30,26 @@ Description:	Store SCSS vars here
 	$font_alt:			"Roboto Mono";
 
 /***** Font Sizes *****/
-	$font_size_heading:	65px;
-	$font_size_subhead:	36px;
-	$font_size_body:		20px;
+	$font_size_heading:	36px;
+	$font_size_subhead:	24px;
+	$font_size_body:		18px;
 	$font_size_detail:		12px;
+
+	/***** Dynamic Font Sizes *****/
+		$clampSmall: 		clamp(12px, 1.5vw, 16px);
+		$clampMedium: 	clamp(14px, 2vw, 20px);
+		$clampLarge: 	clamp(24px, 4vw, 36px);
 
 /***** Letter Spacing *****/
 	$letterSpacingWide:		0.05em;
 	$letterSpacingNormal:	0.035em;
 
 /***** Content Widths *****/
-	$content_width_s: 	650px;
-	$content_width_m: 	920px;
-	$content_width_l: 	1450px;
+	$contentWidthSm: 	650px;
+	$contentWidthMd: 	920px;
+	$contentWidthLg: 	1450px;
+	$contentWidthXl: 	1650px;
+	$contentWidthMax: 	2400px;
 
 
 /***** Transition Timings *****/

@@ -25,22 +25,15 @@
 	.title{
 		display: block;
 		margin-bottom: 0px;
-		font-size: $clampLarge;
-		line-height: 1.2
+		font-size: $font_size_heading;
 	}
 	.previewText{
-		font-size: $clampMedium;
-	}
-	.readMore{
-		margin: 0.75em 0 0.5em;
-	}
-	.postMetas{
-		margin-bottom: 0.5em;
+		font-size: $font_size_body;
 	}
 	.author{
-		font-size: $clampSmall;
+		font-size: $font_size_detail;
 	}
 	.date{
-		font-size: $clampSmall;
+		font-size: $font_size_detail;
 	}
 }

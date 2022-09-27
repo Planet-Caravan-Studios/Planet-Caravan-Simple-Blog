@@ -1,4 +1,4 @@
-@import "@styles/vars.scss";
+@import "@styles/vars.module.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 
@@ -12,8 +12,9 @@ body {
     //main font
   font-family: $font_body, monospace;
   line-height: 1.6;
-  font-size: 18px;
-  color: #000;
+  font-size: $clampMedium;
+  color: $text_color;
+  background-color: $background_color;
 }
 
 *,
@@ -23,17 +24,16 @@ body {
 }
 
 a {
-  color:  #000;
+  color:  $black;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:not([class]){
   color: #0070f3;
-}
-
-a:not([class]):hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 img {
@@ -43,4 +43,19 @@ img {
 
 p{
   margin:  0;
+}
+
+hr{
+  border-width: 2px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  line-height: 1.2;
+}
+
+.container{
+  width: 100%;
+  max-width: $contentWidthLg;
+  margin: auto;
 }
