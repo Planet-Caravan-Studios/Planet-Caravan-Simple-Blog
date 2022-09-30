@@ -47,12 +47,14 @@ When you start the project, check in with the projects's Analyst for the followi
 * Legal copy/links
 * Social links
 
-### Coming Features ###
-* About Us sample page
-* Form sample page
-
 ### Plugin/Library Links ###
 * [react-icons](https://react-icons.github.io/react-icons)
 * [swiper](https://swiperjs.com/)
 * [normalize.css](https://necolas.github.io/normalize.css/)
 * [react-headroom](https://kyleamathews.github.io/react-headroom/)
+
+### Coming Features ###
+* Contact page
+* About page
+* [Arbitrary JSON data usage](https://vercel.com/guides/loading-static-file-nextjs-api-route) 
+* [Category and tag filtering on blog pages](https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops/)
