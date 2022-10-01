@@ -58,3 +58,6 @@ When you start the project, check in with the projects's Analyst for the followi
 * About page
 * [Arbitrary JSON data usage](https://vercel.com/guides/loading-static-file-nextjs-api-route) 
 * [Category and tag filtering on blog pages](https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops/)
+
+### Article Links ###
+* [Set up Google Analytics with react-ga](https://medium.com/@cooperwfloyd/the-most-simple-way-to-track-next-js-page-views-in-google-analytics-8a5c6d981f43)
