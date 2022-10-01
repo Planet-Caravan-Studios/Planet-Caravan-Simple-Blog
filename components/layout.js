@@ -3,12 +3,13 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import data from "@pages/api/data.json"
 
 import DesktopNav from '@components/DesktopNav'
 import Footer from '@components/Footer'
 
-const name = 'Planet Caravan Studios'
 export const siteTitle = 'Next.js Sample Website'
+export const siteData = data
 
 export default function Layout({ children, home }) {
   return (
