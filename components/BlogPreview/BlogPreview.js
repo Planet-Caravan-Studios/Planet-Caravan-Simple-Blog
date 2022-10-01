@@ -34,9 +34,9 @@ export default function BlogPreview({
         </>
       }
        
-        <Link href={`/posts/${id}`}>
-          <a className={componentStyles.title}>{title}</a>
-        </Link>
+        
+        <a href={`/posts/${id}`} className={componentStyles.title}>{title}</a>
+        
         {previewText && 
           <p className={componentStyles.previewText}>
             {previewText}
