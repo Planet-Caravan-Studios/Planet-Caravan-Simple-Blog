@@ -28,7 +28,8 @@ export default function Home({ allPostsData }) {
       <section className="">
         <h2>Global Site Data</h2>
         <p>
-        'siteData' var is exported from the Layout component and is available across all pages.  This is a simple JSON data file intended for arbitrary use.
+        'siteData' var is exported from the Layout component and is available across all pages.  This is a simple JSON data file intended for arbitrary use.          
+        </p>
         <ul>
           <li>
             Title: {siteData.title}
@@ -46,8 +47,6 @@ export default function Home({ allPostsData }) {
             Github: {siteData.github}
           </li>
         </ul>
-          
-        </p>
       </section>
 
       <section className="">
