@@ -1,6 +1,6 @@
 console.log("script.js loaded");
 
-document.addEventListener('DOMContentLoaded', documentReady, false);
+/*document.addEventListener('DOMContentLoaded', documentReady, false);
 window.addEventListener('load', fullPageLoad, false);
 
 function documentReady () {
@@ -11,4 +11,4 @@ function documentReady () {
 function fullPageLoad () {
   // code here...
   console.log("fullPageLoad");
-}
+}*/
