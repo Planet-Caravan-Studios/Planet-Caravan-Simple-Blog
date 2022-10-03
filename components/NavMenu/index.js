@@ -1,3 +1,3 @@
-import DesktopNav from './DesktopNav.js';
+import NavMenu from './NavMenu.js';
 
-export default DesktopNav;
+export default NavMenu;

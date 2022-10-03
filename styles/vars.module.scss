@@ -45,8 +45,9 @@ Description:	Store SCSS vars here
 	$letterSpacingNormal:	0.035em;
 
 /***** Content Widths *****/
+	$contentWidthMin: 	320px;
 	$contentWidthSm: 	650px;
-	$contentWidthMd: 	920px;
+	$contentWidthMd: 	1100px;
 	$contentWidthLg: 	1450px;
 	$contentWidthXl: 	1650px;
 	$contentWidthMax: 	2400px;
