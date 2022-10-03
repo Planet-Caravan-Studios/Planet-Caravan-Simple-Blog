@@ -1,8 +1,14 @@
-.container {
+@import "@styles/vars.module.scss";
+
+.main{
+  padding-top:  100px;
+}
+
+/*.container {
   max-width: 1100px;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
-}
+}*/
 
 .header {
   width:  100%;

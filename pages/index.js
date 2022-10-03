@@ -18,14 +18,14 @@ export default function Home({ allPostsData }) {
         <title>Home | {siteTitle}</title>
       </Head>
 
-      <section className="">
+      <section className={utilStyles.textSection}>
         <h1>SIMPLE BLOG TEMPLATE</h1>
         <p>
           Planet Caravan Studios Simple Blog - this is a template meant to be very basic. 
         </p>
       </section>
 
-      <section className="">
+      <section className={utilStyles.textSection}>
         <h2>Global Site Data</h2>
         <p>
         'siteData' var is exported from the Layout component and is available across all pages.  This is a simple JSON data file intended for arbitrary use.          
