@@ -13,7 +13,7 @@ export default function NavMenu({ children, home }) {
   return (
     <div id="NavMenu" className={componentStyles.NavMenuWrapper}>
       <div className={componentStyles.NavMenuBackdrop +" navClose"}></div>
-      <Container>
+      <Container width="contentWidthXl">
         <div className={componentStyles.NavMenuClose +" navClose"}>
           <BsXLg className={componentStyles.icon} color="#212121" size={45} />
           <BsXLg className={componentStyles.iconHover} color="#fafafa" size={45} />

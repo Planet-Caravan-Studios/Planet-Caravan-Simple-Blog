@@ -5,7 +5,10 @@ export default function Container({
   children, width
 }) {
   return (
-    <div className={componentStyles.Container}>
+    <div 
+      className={componentStyles.Container}
+      data-width={width}
+    >
       {children}
     </div>
   )

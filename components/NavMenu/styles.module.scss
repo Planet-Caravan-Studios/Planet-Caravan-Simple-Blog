@@ -6,7 +6,7 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-
+	z-index: calc(#{$z_index_high} + 1);
 	transition:$transition_slow;
 	opacity: 0;
 	pointer-events: none;
