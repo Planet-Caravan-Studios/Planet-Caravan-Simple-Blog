@@ -48,9 +48,9 @@ export default function Layout({ children, home }) {
               </Link>
             </div>
           )}
-          <Container>
+          <div>
             {children}
-          </Container>
+          </div>
           
         
       </main>
