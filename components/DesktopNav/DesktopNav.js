@@ -18,6 +18,15 @@ export default function DesktopNav({ children, home }) {
       //OPEN
       $("#headerNavButton").click(function(){
         //console.log("click");
+        navMenuOpenClose();
+      });
+
+      //CLOSE
+      $(".navClose").click(function(){
+        navMenuOpenClose();
+      });
+
+      function navMenuOpenClose(){
         if($("#NavMenu").attr("data-active") == "active"){
           $("#NavMenu").attr("data-active", "inactive");
           $("#NavMenuBackdrop").attr("data-active", "inactive");
@@ -25,18 +34,7 @@ export default function DesktopNav({ children, home }) {
           $("#NavMenu").attr("data-active", "active");
           $("#NavMenuBackdrop").attr("data-active", "active");
         }        
-      });
-
-      //CLOSE
-      $(".navClose").click(function(){
-        //console.log("click");
-        if($("#NavMenu").attr("data-active") == "active"){
-          $("#NavMenu").attr("data-active", "inactive");
-          $("#NavMenuBackdrop").attr("data-active", "inactive");
-        }else{
-          //do nothing
-        }        
-      });
+      }
 
     });
   });
