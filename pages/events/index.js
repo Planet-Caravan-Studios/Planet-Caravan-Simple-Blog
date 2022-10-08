@@ -3,9 +3,9 @@ import Layout, { siteTitle } from '@components/layout'
 import utilStyles from '@styles/utils.module.css'
 import { getSortedPostsData } from '@lib/posts'
 import BlogPreview from '@components/BlogPreview'
+import Container from '@components/Container'
 
-
-export default function Posts({ allPostsData }) {
+export default function Events({ allPostsData }) {
   return (
     <Layout home>
       
@@ -14,29 +14,35 @@ export default function Posts({ allPostsData }) {
       </Head>
 
       <section className={utilStyles.headingMd}>
-        <p>
-          Posts Directory Page
-        </p>
+        <Container>
+          <p>
+            Events Directory Page
+          </p>
+        </Container>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          
-          {allPostsData.map(({ id, date, title, author, previewText, image }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <BlogPreview
-                id={id}
-                image={image}
-                title={title}
-                previewText={previewText}
-                author={author}
-                date={date}
-              />
-            </li>
-          ))}
-          
-        </ul>
+        <Container>
+
+          <h2 className={utilStyles.headingLg}>Blog</h2>
+          <ul className={utilStyles.list}>
+            
+            {allPostsData.map(({ id, date, title, author, previewText, image }) => (
+              <li className={utilStyles.listItem} key={id}>
+                <BlogPreview
+                  id={id}
+                  image={image}
+                  title={title}
+                  previewText={previewText}
+                  author={author}
+                  date={date}
+                  path="events"
+                />
+              </li>
+            ))}
+          </ul>
+
+        </Container>
       </section>
     </Layout>
   )
