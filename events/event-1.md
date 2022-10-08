@@ -1,5 +1,5 @@
 ---
-title: "Master Post"
+title: "Event 1"
 date: "2022-08-03"
 author: "Alec Reimel"
 
