@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '@components/layout'
 import utilStyles from '@styles/utils.module.css'
-import { getSortedPostsData } from '@lib/posts'
+import { getSortedPostsData } from '@lib/events'
 import BlogPreview from '@components/BlogPreview'
 import Container from '@components/Container'
 
-export default function Posts({ allPostsData }) {
+export default function Events({ allPostsData }) {
   return (
     <Layout home>
       
@@ -16,15 +16,15 @@ export default function Posts({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <Container>
           <p>
-            Posts Directory Page
+            Events Directory Page
           </p>
         </Container>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <Container>
-          
-          <h2 className={utilStyles.headingLg}>Blog</h2>
+
+          <h2 className={utilStyles.headingLg}>Events</h2>
           <ul className={utilStyles.list}>
             
             {allPostsData.map(({ id, date, title, author, previewText, image }) => (
@@ -36,6 +36,7 @@ export default function Posts({ allPostsData }) {
                   previewText={previewText}
                   author={author}
                   date={date}
+                  path="events"
                 />
               </li>
             ))}

@@ -42,11 +42,13 @@ export default function Layout({ children, home }) {
         
           {/* BREADCRUMBS */}
           {!home && (
-            <div className={styles.backToHome}>
-              <Link href="/">
-                <a>← Back to home</a>
-              </Link>
-            </div>
+            <Container>
+              <div className={styles.backToHome}>
+                <Link href="/">
+                  <a>← Back to home</a>
+                </Link>
+              </div>
+            </Container>
           )}
           <div>
             {children}

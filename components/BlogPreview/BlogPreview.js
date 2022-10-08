@@ -9,7 +9,7 @@ import utilStyles from '@styles/utils.module.css'
 
 export default function BlogPreview({ 
   //Props
-  id, image, title, 
+  id, image, title, path,
   previewText, author, date
 }) {
 
@@ -19,7 +19,7 @@ export default function BlogPreview({
     <div className={componentStyles.BlogPreview}>
       {image ? 
          <div className={componentStyles.image}>
-          <Link href={`/posts/${id}`}>
+          <Link href={path ? `/${path}/${id}` : `/posts/${id}`}>
             <a>
               <img 
                 src={image} 
@@ -35,7 +35,7 @@ export default function BlogPreview({
       }
        
         
-        <a href={`/posts/${id}`} className={componentStyles.title}>{title}</a>
+        <a href={path ? `/${path}/${id}` : `/posts/${id}`} className={componentStyles.title}>{title}</a>
         
         {previewText && 
           <p className={componentStyles.previewText}>
@@ -44,7 +44,7 @@ export default function BlogPreview({
         }
         <div className={componentStyles.readMore}>
           <Button1
-             href={`/posts/${id}`}
+             href={path ? `/${path}/${id}` : `/posts/${id}`}
              text="READ MORE"
           />
         </div>
