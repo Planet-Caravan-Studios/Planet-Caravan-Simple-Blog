@@ -20,8 +20,8 @@
 
 ### Initialize ###
 * Use Node v14.15.3 - you can just run "npm run nvm" to set
-* npm run init-setup (runs multiple setup commands)
-* npm run dev (start and serve commands are the same as this by default, customize them if you need to)
+* run 'npm install'
+* run 'npm run dev' (start and serve commands are the same as this by default, customize them if you need to)
 
 ### Initial Server Deploy ###
 
@@ -36,6 +36,7 @@
 * http://localhost:3000/ - Index/Home
 * http://localhost:3000/posts - Blog posts directory
 * http://localhost:3000/posts/master-post - Post master template
+* http://localhost:3000/events - This is a clone of the blog pages and functionality, and can be renamed to whatever you need, or just ignored/removed.
 
 
 ### Assets Checklist ###
