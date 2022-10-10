@@ -12,22 +12,31 @@ export const siteTitle = 'Next.js Sample Website'
 export default function NavMenu({ children, home }) {
   return (
     <div id="NavMenu" className={componentStyles.NavMenuWrapper}>
+      {/*BACKDROP ELEMENT*/}
       <div className={componentStyles.NavMenuBackdrop +" navClose"}></div>
+      
+      {/*CLOSE BUTTON*/}
       <Container width="contentWidthXl">
         <div className={componentStyles.NavMenuClose +" navClose"}>
           <BsXLg className={componentStyles.icon} color="#212121" size={45} />
           <BsXLg className={componentStyles.iconHover} color="#fafafa" size={45} />
         </div>
       </Container>
+
+      {/*MMENU*/}
       <nav className={componentStyles.NavMenu}>
-        
-          
         <div className={componentStyles.inner}>
-          <Container>
+
             <div className={componentStyles.links}>
               <ul className={utilStyles.list}>
                 <li className={utilStyles.listItem}>
                   <a href="/">Home</a>
+                </li>
+                <li className={utilStyles.listItem}>
+                  <a href="/posts">Blog</a>
+                </li>
+                <li className={utilStyles.listItem}>
+                  <a href="/events">Events</a>
                 </li>
                 <li className={utilStyles.listItem}>
                   <a href="#">About</a>
@@ -35,14 +44,10 @@ export default function NavMenu({ children, home }) {
                 <li className={utilStyles.listItem}>
                   <a href="#">Contact</a>
                 </li>
-                <li className={utilStyles.listItem}>
-                  <a href="#">Home</a>
-                </li>
               </ul>
             </div>
-          </Container>
+
         </div>
-        
       </nav>
 
     </div>

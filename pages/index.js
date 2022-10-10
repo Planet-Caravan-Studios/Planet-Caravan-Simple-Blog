@@ -49,12 +49,15 @@ export default function Home({ allPostsData }) {
               Github: {siteData.github}
             </li>
           </ul>
-          <p>This method can be reused for individual page content as well.  Just make a new JSON file in the /data/ folder and import it like in this page.</p>
+          <p>This method can be reused for individual page content as well.  Just make a new JSON file in the /data/ folder and import it like in the Layout component.</p>
         </section>
 
         <section className="">
           <h3 className={utilStyles.headingLg}>Blog Feed</h3>
+          <p>The blog functionality, along with it's clone in the events functions, can be renamed to anything that requires dynamic content - such as products.  You can also make as many clones of these functions as you'd like for whatever purposes you need.</p>
+          <br/>
           <hr/>
+          <br/>
           {/*<BlogPreviewFeed/>*/}
           <ul className={utilStyles.list}>
             

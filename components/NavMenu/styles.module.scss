@@ -23,7 +23,7 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba($black, 0.25);
+	background-color: rgba($black, 0.5);
 	backdrop-filter: blur(4px);
 }
 
@@ -49,6 +49,7 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
+		background-color: rgba($white, 0.5);
 		transform: translate3d(-50%, -50%, 0);
 	}
 	.iconHover{
@@ -72,15 +73,44 @@
 }
 
 .NavMenu{
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: calc(#{$z_index_high} + 10);
+	pointer-events:none;
+	.inner{
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
 	.links{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		//height: 100%;
-		//background-color: rgba($white, 0.5);
+		background-color: rgba($white, 0.75);
+		text-align: center;
+		width: $contentWidthMin;
+		pointer-events: auto;
+		ul{
+			width: 100%;
+			li{
+				margin-bottom: 0;
+			}
+		}
+		a{
+			color: $black;
+			background-color: transparent;
+			display: block;
+			padding: 0.35em 0 0.55em;
+			font-size: $clampLarge;
+			&:hover{
+				color: $white;
+				background-color: $black;
+			}
+		}
 	}
 	
 }
