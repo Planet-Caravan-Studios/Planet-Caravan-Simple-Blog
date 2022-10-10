@@ -24,7 +24,7 @@ export default function NavMenu({ children, home }) {
       </Container>
 
       {/*MMENU*/}
-      <nav className={componentStyles.NavMenu}>
+      <nav className={componentStyles.NavMenu +" navClose"}>
         <div className={componentStyles.inner}>
 
             <div className={componentStyles.links}>
