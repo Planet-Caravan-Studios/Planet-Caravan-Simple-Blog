@@ -92,7 +92,8 @@
 		align-items: center;
 		background-color: rgba($white, 0.75);
 		text-align: center;
-		width: $contentWidthMin;
+		max-width: $contentWidthMin;
+		width: calc(100% - 30px);
 		pointer-events: auto;
 		ul{
 			width: 100%;
