@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Date from '@components/date'
-import Layout, { siteTitle, siteData } from '@components/layout'
+import Layout, { siteData } from '@components/layout'
 import DesktopNav from '@components/DesktopNav'
 import BlogPreview from '@components/BlogPreview'
 /*import BlogPreviewFeed from '@components/BlogPreviewFeed'*/

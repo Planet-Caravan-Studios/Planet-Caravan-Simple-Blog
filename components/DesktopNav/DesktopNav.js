@@ -28,9 +28,11 @@ export default function DesktopNav({ children, home }) {
 
       function navMenuOpenClose(){
         if($("#NavMenu").attr("data-active") == "active"){
+          $("#NavMenuWrapper").attr("data-active", "inactive");
           $("#NavMenu").attr("data-active", "inactive");
           $("#NavMenuBackdrop").attr("data-active", "inactive");
         }else{
+          $("#NavMenuWrapper").attr("data-active", "active");
           $("#NavMenu").attr("data-active", "active");
           $("#NavMenuBackdrop").attr("data-active", "active");
         }        

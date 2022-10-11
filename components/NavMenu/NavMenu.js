@@ -11,7 +11,7 @@ export const siteTitle = 'Next.js Sample Website'
 
 export default function NavMenu({ children, home }) {
   return (
-    <div id="NavMenu" className={componentStyles.NavMenuWrapper}>
+    <div id="NavMenuWrapper" className={componentStyles.NavMenuWrapper}>
       {/*BACKDROP ELEMENT*/}
       <div className={componentStyles.NavMenuBackdrop +" navClose"}></div>
       
@@ -23,8 +23,8 @@ export default function NavMenu({ children, home }) {
         </div>
       </Container>
 
-      {/*MMENU*/}
-      <nav className={componentStyles.NavMenu +" navClose"}>
+      {/*MENU*/}
+      <nav id="NavMenu" className={componentStyles.NavMenu +" navClose"}>
         <div className={componentStyles.inner}>
 
             <div className={componentStyles.links}>
