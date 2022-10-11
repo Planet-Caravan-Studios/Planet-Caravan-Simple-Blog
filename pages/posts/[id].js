@@ -9,7 +9,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{postData.title} | {siteData.siteTitleBase}</title>
       </Head>
       <Container>
         <article>

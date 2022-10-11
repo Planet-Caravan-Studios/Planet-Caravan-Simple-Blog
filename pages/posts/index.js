@@ -10,7 +10,7 @@ export default function Posts({ allPostsData }) {
     <Layout home>
       
       <Head>
-        <title>{siteTitle}</title>
+        <title>Posts | {siteData.siteTitleBase}</title>
       </Head>
 
       <section className={utilStyles.headingMd}>

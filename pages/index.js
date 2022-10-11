@@ -16,14 +16,14 @@ export default function Home({ allPostsData }) {
     <Layout home>
       
       <Head>
-        <title>Home | {siteTitle}</title>
+        <title>Home | {siteData.siteTitleBase}</title>
       </Head>
       <Container>
         
         <section className={utilStyles.textSection}>
           <h1>SIMPLE BLOG TEMPLATE</h1>
           <p>
-            Planet Caravan Studios Simple Blog - this is a template meant to be very basic. 
+            Planet Caravan Studios Simple Blog - this is a template meant to be very basic and barebones, allowing you to apply your own styles and content.
           </p>
         </section>
 

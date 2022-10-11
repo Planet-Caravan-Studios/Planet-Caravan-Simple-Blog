@@ -10,7 +10,7 @@ export default function Events({ allPostsData }) {
     <Layout home>
       
       <Head>
-        <title>{siteTitle}</title>
+        <title>Events | {siteData.siteTitleBase}</title>
       </Head>
 
       <section className={utilStyles.headingMd}>
