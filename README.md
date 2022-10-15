@@ -26,8 +26,8 @@
 ### Initial Server Deploy ###
 
 
-### Update Test Server ###
-
+### Update Test/Staging Server ###
+This site uses Netlify's auto-deploy functions.  Every time you push to 
 
 ### Form Configuration ###
 
@@ -56,9 +56,12 @@ When you start the project, check in with the projects's Analyst for the followi
 
 ### Coming Features ###
 * Contact page
-* About page
-* [Arbitrary JSON data usage](https://vercel.com/guides/loading-static-file-nextjs-api-route) 
+* About page - == In Progress ==
+* [Arbitrary JSON data usage](https://vercel.com/guides/loading-static-file-nextjs-api-route) - == Complete ==
 * [Category and tag filtering on blog pages](https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops/)
+* lodash - js utility library
+* browsersync - sync multiple browser windows
+* Form integration - netilfy forms
 
 ### Article Links ###
 * [Set up Google Analytics with react-ga](https://medium.com/@cooperwfloyd/the-most-simple-way-to-track-next-js-page-views-in-google-analytics-8a5c6d981f43)

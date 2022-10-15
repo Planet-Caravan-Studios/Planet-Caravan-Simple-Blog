@@ -41,7 +41,7 @@ export default function Layout({ children, home }) {
       <main className={styles.main}>
         
           {/* BREADCRUMBS */}
-          {!home && (
+          {/*{!home && (
             <Container>
               <div className={styles.backToHome}>
                 <Link href="/">
@@ -49,7 +49,8 @@ export default function Layout({ children, home }) {
                 </Link>
               </div>
             </Container>
-          )}
+          )}*/}
+          
           <div>
             {children}
           </div>
