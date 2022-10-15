@@ -5,6 +5,16 @@ import { getSortedPostsData } from '@lib/posts'
 import BlogPreview from '@components/BlogPreview'
 import Container from '@components/Container'
 
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+
 export default function Posts({ allPostsData }) {
   return (
     <Layout home>
@@ -45,13 +55,4 @@ export default function Posts({ allPostsData }) {
       </section>
     </Layout>
   )
-}
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
 }

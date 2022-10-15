@@ -1,15 +1,26 @@
+/*===== Components =====*/
 import Head from 'next/head'
+import Link from 'next/link'
 import Date from '@components/date'
 import Layout, { siteData } from '@components/layout'
 import DesktopNav from '@components/DesktopNav'
 import BlogPreview from '@components/BlogPreview'
-/*import BlogPreviewFeed from '@components/BlogPreviewFeed'*/
 import Container from '@components/Container'
 
+/*===== Styles =====*/
 import utilStyles from '@styles/utils.module.css'
 import { getSortedPostsData } from '@lib/posts'
-//import Data from "./api/data.json"
-import Link from 'next/link'
+
+/*===== Posts Data =====*/
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
 
 export default function Home({ allPostsData }) {
   return (
@@ -18,6 +29,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>Home | {siteData.siteTitleBase}</title>
       </Head>
+
       <Container>
         
         <section className={utilStyles.textSection}>
@@ -55,10 +67,11 @@ export default function Home({ allPostsData }) {
         <section className="">
           <h3 className={utilStyles.headingLg}>Blog Feed</h3>
           <p>The blog functionality, along with it's clone in the events functions, can be renamed to anything that requires dynamic content - such as products.  You can also make as many clones of these functions as you'd like for whatever purposes you need.</p>
+
           <br/>
           <hr/>
           <br/>
-          {/*<BlogPreviewFeed/>*/}
+
           <ul className={utilStyles.list}>
             
             {allPostsData.map(({ id, date, title, author, previewText, image }) => (
@@ -84,11 +97,4 @@ export default function Home({ allPostsData }) {
   )
 }
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
+
