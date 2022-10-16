@@ -16,7 +16,7 @@ export default function ContactForm({
 
   return (
     <form 
-      name="contact" 
+      name="Contact" 
       method="POST" 
       data-netlify="true"
       action="#contactForm--thankYou"
