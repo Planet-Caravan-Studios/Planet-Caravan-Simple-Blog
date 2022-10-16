@@ -19,6 +19,7 @@ export default function ContactForm({
       name="contact" 
       method="POST" 
       data-netlify="true"
+      action="#contactForm--thankYou"
       className={componentStyles.ContactForm}
     >
       
