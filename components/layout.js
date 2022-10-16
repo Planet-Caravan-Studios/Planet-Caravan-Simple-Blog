@@ -5,6 +5,7 @@ import styles from './layout.module.scss'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import data from "@data/data.json"
+import $ from 'jquery'
 
 import DesktopNav from '@components/DesktopNav'
 import NavMenu from '@components/NavMenu'
@@ -18,10 +19,11 @@ export default function Layout({ children, home }) {
  
   useEffect(() => {
     console.log("Layout component loaded");
+    $("#LayoutOuter").attr("data-hidden", "false")
   });
 
   return (
-    <div id="LayoutOuter" data-hidden>
+    <div id="LayoutOuter" className={styles.outer} data-hidden>
       <Head>
         <link rel="icon" href="/favicon.png" />
         <meta
