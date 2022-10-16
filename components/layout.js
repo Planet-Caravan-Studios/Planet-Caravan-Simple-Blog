@@ -18,8 +18,9 @@ export const siteData = data
 export default function Layout({ children, home }) {
  
   useEffect(() => {
-    console.log("Layout component loaded");
-    $("#LayoutOuter").attr("data-hidden", "false")
+    console.log("SmoothLoad function started");
+    $("#LayoutOuter").attr("data-hidden", "false");
+    console.log("SmoothLoad function finished");
   });
 
   return (
