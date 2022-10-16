@@ -10,6 +10,7 @@ import utilStyles from '@styles/utils.module.css'
 /*===== JSON Page Content =====*/
 import pageData from "@data/pageAbout.json"
 
+/*===== Page Content =====*/
 export default function About({}) {
   return (
     <Layout>
