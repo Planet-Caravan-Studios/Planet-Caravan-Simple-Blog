@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './layout.module.scss'
@@ -14,8 +15,13 @@ export const siteTitle = 'Next.js Sample Website'
 export const siteData = data
 
 export default function Layout({ children, home }) {
+ 
+  useEffect(() => {
+    console.log("Layout component loaded");
+  });
+
   return (
-    <div >
+    <div id="LayoutOuter" data-hidden>
       <Head>
         <link rel="icon" href="/favicon.png" />
         <meta

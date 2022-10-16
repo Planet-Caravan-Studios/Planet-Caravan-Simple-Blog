@@ -42,7 +42,7 @@ export default function NavMenu({ children, home }) {
                   <a href="/about">About</a>
                 </li>
                 <li className={utilStyles.listItem}>
-                  <a href="#">Contact</a>
+                  <a href="/contact">Contact</a>
                 </li>
               </ul>
             </div>
