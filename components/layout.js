@@ -19,7 +19,10 @@ export default function Layout({ children, home }) {
  
   useEffect(() => {
     console.log("SmoothLoad function started");
-    $("#LayoutOuter").attr("data-hidden", "false");
+    
+    setTimeout(function() { 
+        $("#LayoutOuter").attr("data-hidden", "false");
+    }, 1000);
     console.log("SmoothLoad function finished");
   });
 
