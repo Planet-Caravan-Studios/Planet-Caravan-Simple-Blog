@@ -16,18 +16,9 @@ export const siteTitle = 'Next.js Sample Website'
 export const siteData = data
 
 export default function Layout({ children, home }) {
- 
-  useEffect(() => {
-    console.log("SmoothLoad function started");
-    
-    setTimeout(function() { 
-        $("#LayoutOuter").attr("data-hidden", "false");
-    }, 1000);
-    console.log("SmoothLoad function finished");
-  });
 
   return (
-    <div id="LayoutOuter" className={styles.outer} data-hidden>
+    <div id="LayoutOuter" className={styles.outer} >
       <Head>
         <link rel="icon" href="/favicon.png" />
         <meta
