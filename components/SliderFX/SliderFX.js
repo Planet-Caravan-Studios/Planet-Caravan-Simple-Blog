@@ -22,10 +22,11 @@ export default function SliderFX({
 
   return (
     <Swiper
+        id="SliderFx"
         className={componentStyles.Slider}
         //Settings
         centeredSlides={true}
-        spaceBetween={0}
+        spaceBetween={-250}
         slidesPerView={1}
         //loop={true}
         speed={1000}
@@ -44,7 +45,7 @@ export default function SliderFX({
             rotate: 50,
             stretch: 0,
             depth: 100,
-            modifier: 1,
+            modifier: 0.75,
             slideShadows: false,
           }}
           modules={[EffectCoverflow, Pagination]}

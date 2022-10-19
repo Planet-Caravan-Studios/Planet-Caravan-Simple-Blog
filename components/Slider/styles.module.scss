@@ -4,7 +4,7 @@
 .Slider{
 	padding: 75px 75px;
 	//border: 5px solid $red;
-	overflow: visible;
+	overflow: hidden;
 
 	.SlideOutter{
 		width: 100%;
@@ -12,7 +12,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		overflow: visible;
+		//overflow: visible;
 		position: relative;
 		z-index: 100;
 
@@ -41,18 +41,19 @@
 	//padding: 35px;
 	//box-shadow: $nice_shadow_short;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	//border: 5px solid $red;
 
 	.image{
-		width: 300px;
+		width: 100%;
+		max-width: 300px;
 		padding: 15px;
 	}
 
 	.copy{
-		//width:calc(100% - 300px);
+		width:calc(100% - 300px);
 		padding: 35px 15px 15px;
 
 		.title{

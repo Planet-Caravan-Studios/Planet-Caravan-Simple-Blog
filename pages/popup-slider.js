@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Layout, { siteData } from '@components/layout'
 import Container from '@components/Container'
 import HeroSection from '@components/HeroSection'
-import SliderComponent from '@components/Slider'
 import SliderFX from '@components/SliderFX'
 
 /*===== Styles =====*/
@@ -23,16 +22,12 @@ export default function Slider({}) {
 
       <section className={utilStyles.textSection}> 
         <Container> 
-          <h1>Sliders</h1>
-          <br/><hr/><br/>
-          <h2>Basic Slider</h2>
-          <SliderComponent/>
+          <h1>Popup Slider</h1>
         </Container>
       </section>
 
       <section className={utilStyles.textSection}> 
         <Container> 
-          <h2>FX Slider</h2>
           <SliderFX/>
         </Container>
       </section>
