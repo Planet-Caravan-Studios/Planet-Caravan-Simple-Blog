@@ -12,7 +12,7 @@ SwiperCore.use([Controller, Navigation, Pagination, A11y, Autoplay, EffectCoverf
 import componentStyles from './styles.module.scss'
 import utilStyles from '@styles/utils.module.css'
 
-export default function Slider({ 
+export default function SliderFX({ 
   //Props
   id, image, title, 
   previewText, author, date, effect
@@ -36,6 +36,19 @@ export default function Slider({
         //Navigation
         navigation
         pagination={{ clickable: true }}
+
+        //{effect &&
+          //Effects
+          effect={"coverflow"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          modules={[EffectCoverflow, Pagination]}
+        //}
 
         //Actions
         onSwiper={(swiper) => console.log(swiper)}

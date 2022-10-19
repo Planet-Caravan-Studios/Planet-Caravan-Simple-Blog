@@ -4,6 +4,7 @@ import Layout, { siteData } from '@components/layout'
 import Container from '@components/Container'
 import HeroSection from '@components/HeroSection'
 import SliderComponent from '@components/Slider'
+import SliderFX from '@components/SliderFX'
 
 /*===== Styles =====*/
 import utilStyles from '@styles/utils.module.css'
@@ -23,9 +24,17 @@ export default function Slider({}) {
       <section className={utilStyles.textSection}> 
         <Container> 
           <h1>Sliders</h1>
+          <br/><hr/><br/>
+          <h2>Basic Slider</h2>
           <SliderComponent/>
         </Container>
+      </section>
 
+      <section className={utilStyles.textSection}> 
+        <Container> 
+          <h2>FX Sliders</h2>
+          <SliderFX/>
+        </Container>
       </section>
 
     </Layout>
