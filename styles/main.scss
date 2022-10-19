@@ -70,7 +70,7 @@ html{
 /* ============================== */
 /*                             Sliders                          */
 /* ============================== */
-  #SliderFx{
+  #SliderFX{
     .swiper-button-next:after{
        background-color: $white;
        padding: 10px;
@@ -81,7 +81,7 @@ html{
        }
        .swiper-slide {
         opacity: 0.55;
-        transition: $transition_slow;
+        //transition: $transition_slow;
         &.swiper-slide-active{
           opacity:1;
         }
