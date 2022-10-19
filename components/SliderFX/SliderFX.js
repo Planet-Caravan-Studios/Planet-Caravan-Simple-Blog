@@ -22,7 +22,7 @@ export default function SliderFX({
 
   return (
     <Swiper
-        id="SliderFx"
+        id="SliderFX"
         className={componentStyles.Slider}
         //Settings
         centeredSlides={true}
