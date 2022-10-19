@@ -21,7 +21,7 @@
 
 	.SlideInner{
 		width: 100%;
-		max-width: 850px;
+		max-width: 550px;
 		//padding: 35px;
 		display: flex;
 		flex-direction: column;
@@ -36,7 +36,7 @@
 /* Individual slides */
 .SwiperSlide{
 	width: 100%;
-	//max-width: 550px;
+	max-width: 550px;
 	background: $grey_1;
 	//padding: 35px;
 	//box-shadow: $nice_shadow_short;
