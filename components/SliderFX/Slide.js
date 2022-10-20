@@ -25,6 +25,11 @@ export default function Slide({
         <p className={componentStyles.body}>
           {bodyCopy}
         </p>
+        <span data-popupcard="card-1">
+          <Button1
+            text="Learn More"
+          />
+        </span>
       </div>
 
     </div>
