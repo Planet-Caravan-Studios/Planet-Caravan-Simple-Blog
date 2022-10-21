@@ -30,12 +30,12 @@ export default function Slider({}) {
         </Container>
       </section>
 
-      <section className={utilStyles.textSection}> 
+     {/* <section className={utilStyles.textSection}> 
         <Container> 
           <h2>FX Slider</h2>
           <SliderFX/>
         </Container>
-      </section>
+      </section>*/}
 
     </Layout>
   )
