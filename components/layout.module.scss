@@ -4,7 +4,7 @@
   display: block;
   opacity: 1;
   pointer-events: auto;
-  transition: $transition_medium;
+  transition: $transitionMedium;
 
   &[data-hidden="true"]{
     opacity: 0;

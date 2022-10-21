@@ -16,59 +16,64 @@ Description:	Store SCSS vars here
 
 	/***** Named Colors *****/
 		//only use other vars
-		$primary_color:			$black;
-		$secondary_color:		$white;
+		$primaryColor:			$black;
+		$secondaryColor:		$white;
 
-		$background_color:	$white;
-		$text_color:				$black;
-		$accent_color:			$red;
+		$backgroundColor:		$white;
+		$textColor:				$black;
+		$accentColor:			$red;
 
 
 /***** Fonts *****/
-	$font_body:		"Roboto Mono";
-	$font_display:	"Roboto Mono";
-	$font_alt:			"Roboto Mono";
+	$fontBody:			"Roboto Mono";
+	$fontDisplay:	"Roboto Mono";
+	$fontAlt:			"Roboto Mono";
 
-/***** Font Sizes *****/
-	$font_size_heading:	36px;
-	$font_size_subhead:	24px;
-	$font_size_body:		18px;
-	$font_size_detail:		12px;
+/***** Static Font Sizes *****/
+	$fontSizeHeading:		36px;
+	$fontSizeSubhead:		24px;
+	$fontSizeBody:			18px;
+	$fontSizeDetail:		12px;
 
-	/***** Dynamic Font Sizes *****/
-		$clampSmall: 		clamp(12px, 1.5vw, 16px);
-		$clampMedium: 	clamp(14px, 2vw, 20px);
-		$clampLarge: 	clamp(24px, 4vw, 36px);
-		$clampExtraLarge: 	clamp(36px, 5.5vw, 52px);
+/***** Dynamic Font Sizes *****/
+	$clampExtraSmall:		clamp(8px, 1vw, 12px);
+	$clampSmall: 				clamp(12px, 1.5vw, 16px);
+	$clampMedium: 			clamp(14px, 2vw, 20px);
+	$clampLarge: 			clamp(24px, 4vw, 36px);
+	$clampExtraLarge: 	clamp(36px, 5.5vw, 52px);
 
 /***** Letter Spacing *****/
 	$letterSpacingWide:		0.05em;
 	$letterSpacingNormal:	0.035em;
 
 /***** Content Widths *****/
-	$contentWidthMin: 	320px;
-	$contentWidthSm: 	650px;
-	$contentWidthMd: 	1100px;
-	$contentWidthLg: 	1450px;
-	$contentWidthXl: 	1650px;
-	$contentWidthMax: 	2400px;
+	$contentWidthMin: 		320px;
+	$contentWidthSm: 		650px;
+	$contentWidthMd: 		1100px;
+	$contentWidthLg: 		1450px;
+	$contentWidthXl: 		1650px;
+	$contentWidthMax: 		2400px;
 
 
 /***** Transition Timings *****/
-	$transition_fast:		0.175s ease-in-out;
-	$transition_medium:	0.25s ease-in-out;
-	$transition_slow:		0.5s ease-in-out;
+	$transitionFast:		0.175s ease-in-out;
+	$transitionMedium:	0.25s ease-in-out;
+	$transitionSlow:		0.5s ease-in-out;
 
 
 /***** Z-Index Ranges *****/
-	$z_index_base: 		0;
-	$z_index_medium: 	100;
-	$z_index_high: 		1000;
+	$zIndexBase: 		0;
+	$zIndexMedium: 	100;
+	$zIndexHigh: 		1000;
+
+
+/***** Border Settings *****/
+	$borderWidth:	2px;
+	$borderRadius:	0;
 
 /***** Shadows *****/
-
 	/* source: https://brumm.af/shadows */
-	$nice_shadow:
+	$niceShadow:
 		0 2.8px 2.2px rgba($black, 0.02),
 		0 6.7px 5.3px rgba($black, 0.028),
 		0 12.5px 10px rgba($black, 0.035),
@@ -76,7 +81,7 @@ Description:	Store SCSS vars here
 		0 41.8px 33.4px rgba($black, 0.05),
 		0 100px 80px rgba($black, 0.07);
 
-	$nice_shadow_short:
+	$niceShadowShort:
 		0 1.1px 2.2px rgba($black, 0.02),
 		0 2.7px 5.3px rgba($black, 0.028),
 		0 5px 10px rgba($black, 0.035),
@@ -84,14 +89,14 @@ Description:	Store SCSS vars here
 		0 16.7px 33.4px rgba($black, 0.05);
 
 
-	$text-shadow-red:
+	$textShadowRed:
 		1px 1px $red, 
 		2px 2px $red, 
 		3px 3px $red, 
 		4px 4px $red, 
 		5px 5px $red;
 	  
-	$text-glow-red:
+	$textGlowRed:
 		0 0 1vw $red, 
 		0 0 3vw $red, 
 		0 0 10vw $red, 

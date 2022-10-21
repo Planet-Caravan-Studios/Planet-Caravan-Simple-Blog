@@ -39,7 +39,7 @@
 	max-width: 550px;
 	background: $grey_1;
 	//padding: 35px;
-	//box-shadow: $nice_shadow_short;
+	//box-shadow: $niceShadowShort;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -56,8 +56,8 @@
 		padding: 35px 15px 15px;
 
 		.title{
-			font-family: $font_display;
-			font-size: $font_size_subhead;
+			font-family: $fontDisplay;
+			font-size: $fontSizeSubhead;
 			margin-bottom: 10px;
 
 			/*&:after{
@@ -70,8 +70,8 @@
 		}
 
 		.body{
-			font-family: $font_body;
-			font-size: $font_size_body;
+			font-family: $fontBody;
+			font-size: $fontSizeBody;
 			margin-bottom: 15px;
 		}
 	}
