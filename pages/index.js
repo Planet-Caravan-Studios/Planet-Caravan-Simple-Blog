@@ -46,19 +46,19 @@ export default function Home({ allPostsData }) {
           </p>
           <ul>
             <li>
-              Title: {siteData.title}
+              Title: <code>{siteData.title}</code>
             </li>
             <li>
-              Description: {siteData.description}
+              Description: <code>{siteData.description}</code>
             </li>
             <li>
-              Author: {siteData.author}
+              Author: <code>{siteData.author}</code>
             </li>
             <li>
-              Organization: {siteData.organization}
+              Organization: <code>{siteData.organization}</code>
             </li>
             <li>
-              Github: {siteData.github}
+              Github: <code>{siteData.github}</code>
             </li>
           </ul>
           <p>This method can be reused for individual page content as well.  Just make a new JSON file in the /data/ folder and import it like in the Layout component.</p>

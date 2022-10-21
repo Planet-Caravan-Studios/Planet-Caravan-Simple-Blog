@@ -8,20 +8,21 @@ Description:	Store SCSS vars here
 
 
 /***** Color Variables *****/
-	$black: 			#212121;
-	$white: 			#fafafa;
-	$grey_1:		#ececec;
-	$grey_2:		#3e3e3e;
-	$red: 			#fb0000;
+	$black: 				#212121;
+	$white: 				#fafafa;
+	$grey_1:			#ececec;
+	$grey_2:			#3e3e3e;
+	$red: 				#fb0000;
+	$orange: 			#D96D01;
+	$darkOrange:		#BA4103;
 
-	/***** Named Colors *****/
-		//only use other vars
-		$primaryColor:			$black;
-		$secondaryColor:		$white;
-
-		$backgroundColor:		$white;
-		$textColor:				$black;
-		$accentColor:			$red;
+/***** Named Colors *****/
+	//only use other vars
+	$primaryColor:			$black;
+	$secondaryColor:		$white;
+	$backgroundColor:		$white;
+	$textColor:				$black;
+	$accentColor:			$darkOrange;
 
 
 /***** Fonts *****/
