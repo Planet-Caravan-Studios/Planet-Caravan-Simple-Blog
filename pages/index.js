@@ -66,6 +66,8 @@ export default function Home({ allPostsData }) {
 
         <section className="">
           <h3 className={utilStyles.headingLg}>Blog Feed</h3>
+          <p>The blog for this project is powered by simple Markdown files using frontmatter for variables.  Simply create/modify/delete files in the <code>/posts/</code> folder.  A clone of the blog posts has been made in the <code>/events/</code> folder, to show you that the blog functionality can be cloned and rebranded as another function.</p>
+          <br/>
           <p>The blog functionality, along with it's clone in the events functions, can be renamed to anything that requires dynamic content - such as products.  You can also make as many clones of these functions as you'd like for whatever purposes you need.</p>
 
           <br/>

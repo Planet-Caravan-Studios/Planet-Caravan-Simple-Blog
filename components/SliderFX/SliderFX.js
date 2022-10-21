@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Button1 from '@components/Button1'
 import Slide from './Slide'
 import $ from 'jquery'
+import '@scripts/script.js';
 
 /*===== Swiper Imports =====*/
 import SwiperCore, { Controller, Navigation, Pagination, A11y, Autoplay, EffectCoverflow } from 'swiper';
@@ -19,21 +20,16 @@ export default function SliderFX({
   previewText, author, date, effect, middle
 }) {
 
-  /*[middle] = useState(0);
-  
   useEffect(() => {
-    $(document).ready(function() {
-      
-      let count = $("#SliderFX .swiper-slide").length;
-      let middle = Math.ceil(count/2);
-      console.log([middle]);
-
+      $(document).ready(function() {
+        //JS GOES HERE
+      });
     });
-  }, [middle]);*/
 
   return (
     <Swiper
         id="SliderFX"
+        data-slider="SliderFX"
         className={componentStyles.Slider}
         //Settings
         centeredSlides={true}

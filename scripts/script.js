@@ -12,3 +12,13 @@ function fullPageLoad () {
   // code here...
   console.log("fullPageLoad");
 }*/
+
+function documentReady () {
+  // code here...
+  $(".swiper-slide-next").on('click', function(){
+    $(".swiper-button-next").click();
+  });
+  $(".swiper-slide-prev").on('click', function(){
+    $(".swiper-button-prev").click();
+  });
+}
