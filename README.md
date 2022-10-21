@@ -19,7 +19,7 @@
 * Store your local project in a regular folder with no cloud syncing - this can cause issues with running/building the project
 
 ### Initialize ###
-* Use Node v14.15.3 - you can just run "npm run nvm" to set
+* Use Node v16.13.0 - you can just run "npm run nvm" to set
 * run 'npm install'
 * run 'npm run dev' (start and serve commands are the same as this by default, customize them if you need to)
 

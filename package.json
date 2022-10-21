@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "nvm": "nvm use 14.15.3"
+    "nvm": "nvm use 16.13.0"
   },
   "dependencies": {
     "date-fns": "^2.11.1",
