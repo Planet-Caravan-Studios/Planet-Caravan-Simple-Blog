@@ -8,6 +8,9 @@
 	width: 65vw;
 	aspect-ratio: 16 / 9;
 	background-color: $grey_1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	z-index: $z_index_medium;
 	transition: $transition_slow;
 
@@ -21,7 +24,11 @@
 	}
 
 	[data-close]{
-		cursor: pointer
+		cursor: pointer;
+		display: inline-block;
+		position: absolute;
+		top: 25px;
+		right: 25px;
 	}
 }
 

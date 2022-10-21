@@ -48,7 +48,10 @@ html{
   }
 
   hr{
-    border-width: 2px;
+    //border-width: 2px;
+    border: none;
+    height: 2px;
+    background-color: $black
   }
 
   h1, h2, h3, h4, h5, h6{
@@ -57,6 +60,12 @@ html{
     margin: 0;
     font-size: $clampLarge;
   }
+}
+
+code{
+  background-color: $grey_1;
+  padding: 5px 5px;
+  //border: 1px solid $black;
 }
 
 
