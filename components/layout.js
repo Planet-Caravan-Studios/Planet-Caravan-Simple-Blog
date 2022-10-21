@@ -18,14 +18,16 @@ export const siteData = data
 export default function Layout({ children, home }) {
   
   useEffect(() => {
-    smoothLoad();
+    $(document).ready(function() {
+      smoothLoad();
 
-    function smoothLoad(){
-      let bufferTime = 0;
-      setTimeout(function() { 
-          $("#LayoutOuter").attr("data-hidden", "false");
-      }, bufferTime);
-    }
+      function smoothLoad(){
+        let bufferTime = 250;
+        setTimeout(function() { 
+            $("#LayoutOuter").attr("data-hidden", "false");
+        }, bufferTime);
+      }
+    });
   });
 
   return (

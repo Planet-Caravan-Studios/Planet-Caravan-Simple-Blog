@@ -61,7 +61,7 @@ export default function Home({ allPostsData }) {
               Github: <code>{siteData.github}</code>
             </li>
           </ul>
-          <p>This method can be reused for individual page content as well.  Just make a new JSON file in the /data/ folder and import it like in the Layout component.</p>
+          <p>This method can be reused for individual page content as well.  Just make a new JSON file in the <code>/data/</code> folder and import it like in the Layout component.</p>
         </section>
 
         <section className="">
