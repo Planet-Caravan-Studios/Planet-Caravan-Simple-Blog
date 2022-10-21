@@ -23,6 +23,20 @@ export default function SliderFX({
   useEffect(() => {
       $(document).ready(function() {
         //JS GOES HERE
+
+        //Navigate by clicking on next slide,
+        //workaround because Swiper method wasn't working
+        $(".swiper-slide").click(function(){
+          console.log("slide click");
+          if($(this).hasClass("swiper-slide-next")){
+            console.log("slide next click");
+            $(".swiper-button-next").click();
+          } else if($(this).hasClass("swiper-slide-prev")){
+            console.log("slide prev click");
+            $(".swiper-button-prev").click();
+          }
+        });
+
       });
     });
 

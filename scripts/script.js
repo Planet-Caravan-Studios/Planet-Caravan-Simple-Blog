@@ -1,6 +1,6 @@
 console.log("script.js loaded");
-
-/*document.addEventListener('DOMContentLoaded', documentReady, false);
+/*
+document.addEventListener('DOMContentLoaded', documentReady, false);
 window.addEventListener('load', fullPageLoad, false);
 
 function documentReady () {
@@ -13,7 +13,7 @@ function fullPageLoad () {
   console.log("fullPageLoad");
 }*/
 
-function documentReady () {
+/*$(document).ready(function() {
   // code here...
   $(".swiper-slide-next").on('click', function(){
     $(".swiper-button-next").click();
@@ -21,4 +21,4 @@ function documentReady () {
   $(".swiper-slide-prev").on('click', function(){
     $(".swiper-button-prev").click();
   });
-}
+});*/
