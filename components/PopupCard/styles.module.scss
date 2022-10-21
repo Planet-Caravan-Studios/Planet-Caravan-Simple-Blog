@@ -11,8 +11,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: $z_index_medium;
-	transition: $transition_slow;
+	z-index: $zIndexMedium;
+	transition: $transitionSlow;
 
 	&[data-active="false"]{
 		opacity: 0;

@@ -6,8 +6,8 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	z-index: calc(#{$z_index_high} + 1);
-	transition:$transition_slow;
+	z-index: calc(#{$zIndexHigh} + 1);
+	transition:$transitionSlow;
 	opacity: 0;
 	pointer-events: none;
 	//will-change: opacity;
@@ -31,7 +31,7 @@
 	position: absolute;
 	top: 69px;
 	right: 35px;
-	z-index: calc(#{$z_index_high} + 15);
+	z-index: calc(#{$zIndexHigh} + 15);
 	padding:5px;
 	border: solid 2px $black;
 	background-color: transparent;
@@ -41,7 +41,7 @@
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	transition: $transition_medium;
+	transition: $transitionMedium;
 
 	.icon{
 		opacity: 1;
@@ -76,7 +76,7 @@
 	position: relative;
 	height: 100%;
 	width: 100%;
-	z-index: calc(#{$z_index_high} + 10);
+	z-index: calc(#{$zIndexHigh} + 10);
 	pointer-events:none;
 	&[data-active="active"]{
 		pointer-events: auto;
