@@ -63,7 +63,7 @@ export default function SliderFX({
           //Effects
           effect={"coverflow"}
           coverflowEffect={{
-            rotate: 50,
+            rotate: 80,
             stretch: 0,
             depth: 100,
             modifier: 0.75,
