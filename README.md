@@ -14,8 +14,8 @@
 ### Best Practices ###
 * Use lots of comments and documentation
 * Keep your tabs lined up correctly
-* Follow HTML5 element heirarchy
-* Double check your title tags and favicon
+* Follow HTML5 element hierarchy
+* Double check your title tags and favicon before launch
 * Store your local project in a regular folder with no cloud syncing - this can cause issues with running/building the project
 
 ### Initialize ###
@@ -40,7 +40,7 @@ This site uses Netlify's auto-deploy functions.  Every time you push to
 
 
 ### Assets Checklist ###
-When you start the project, check in with the projects's Analyst for the following:
+When you start the project, check in with the Project Manager for the following:
 * Font files
 * Logo(s) - as PNGs
 * Favicon - you can usually resize the logo for this
@@ -49,15 +49,13 @@ When you start the project, check in with the projects's Analyst for the followi
 * Social links
 
 ### Plugin/Library Links ###
-* [react-icons](https://react-icons.github.io/react-icons)
-* [swiper](https://swiperjs.com/)
-* [normalize.css](https://necolas.github.io/normalize.css/)
-* [react-headroom](https://kyleamathews.github.io/react-headroom/)
+* [react-icons](https://react-icons.github.io/react-icons) - provides all icons, uses multiple icon libraries.
+* [swiper](https://swiperjs.com/) - use this for all sliders/slideshows/carousels 
+* [normalize.css](https://necolas.github.io/normalize.css/) - base CSS reset
+* [react-headroom](https://kyleamathews.github.io/react-headroom/) - basic scroll detection, useful for sticky headers, scroll-to-top buttons, etc.
 
 ### Coming Features ###
 * Contact page
-* About page - == In Progress ==
-* [Arbitrary JSON data usage](https://vercel.com/guides/loading-static-file-nextjs-api-route) - == Complete ==
 * [Category and tag filtering on blog pages](https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops/)
 * lodash - js utility library
 * browsersync - sync multiple browser windows
