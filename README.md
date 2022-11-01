@@ -1,5 +1,5 @@
 # README #
-
+---
 ### Project-Specific Notes ###
 * Project-specific notes go here.
 
@@ -7,7 +7,7 @@
 * Local: http://localhost:3000/
 * Staging: https://planet-caravan-simple-blog-template.netlify.app/
 * Live: 
-
+---
 ## Planet Caravan Simple Blog Template ##
 
 
@@ -24,10 +24,10 @@
 * run 'npm run dev' (start and serve commands are the same as this by default, customize them if you need to)
 
 ### Initial Server Deploy ###
-
+Connect repo to Netlify
 
 ### Update Test/Staging Server ###
-This site uses Netlify's auto-deploy functions.  Every time you push to 
+This site uses Netlify's auto-deploy functions.  Every time you push to the 'main' branch, it will auto-deploy to the staging URL.
 
 ### Form Configuration ###
 
