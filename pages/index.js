@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Date from '@components/date'
-import Layout, { siteData } from '@components/layout'
+import Layout, { siteData } from '@components/Layout'
 import DesktopNav from '@components/DesktopNav'
 import BlogPreview from '@components/BlogPreview'
 import Container from '@components/Container'

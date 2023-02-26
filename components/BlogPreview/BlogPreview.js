@@ -1,4 +1,5 @@
 import React from "react"
+import Image from 'next/image'
 import Link from 'next/link'
 import Date from '@components/date'
 import SocialIcons from '@components/SocialIcons'

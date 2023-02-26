@@ -5,9 +5,10 @@
 	padding-bottom: 50px;
 	border-bottom: solid 2px $black;
 	.image{
+		position: relative;
 		background-color: $grey_1;
 		margin-bottom: 15px;
-		//max-height: 400px;
+		//height: 400px;
 		a{
 			display: block;
 			width: 100%; 

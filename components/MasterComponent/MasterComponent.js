@@ -1,73 +1,74 @@
 /*===== Components =====*/
-import React from "react"
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image'
 import Link from 'next/link'
-import Date from '@components/date'
-import SocialIcons from '@components/SocialIcons'
+
 import Button1 from '@components/Button1'
 
 /*===== Styles =====*/
 import componentStyles from './styles.module.scss'
 import utilStyles from '@styles/utils.module.css'
 
-export default function BlogPreview({ 
+export default function MasterComponent({ 
   //Props
-  id, image, title, 
+  children, id, image, title, 
   previewText, author, date
 }) {
 
+  //JS Goes Here
   //console.log(author);
+   useEffect(() => {});
 
   return (
-    <div className={componentStyles.BlogPreview}>
+    <div className={componentStyles.MasterComponent}>
+
+      {/* Conditional Rending - IF */}
+      {title &&
+        <p className={componentStyles.title}>
+          {title}
+        </p>
+      }
+
+      {/* Conditional Rending - IF/ELSE */}
+      {author ?
+        <p className={componentStyles.author}>
+          {author}
+        </p>
+        :
+        <p className={componentStyles.author}>
+          No Author Listed
+        </p>
+      }
+
+      {/* Link Example */}
+      <Link href={`/posts/${id}`} passHref>
+        <a className={componentStyles.title}>{title}</a>
+      </Link>
+      
+      {/* Image - Conditional Render */}
       {image ? 
          <div className={componentStyles.image}>
-          <Link href={`/posts/${id}`}>
+          <Link className={componentStyles.imgLink} href={`/posts/${id}`} passHref>
             <a>
-              <img 
-                src={image} 
-                alt="" 
-              />
+              <img src={image} alt="" />
             </a>
           </Link>
         </div>
         :
-        <>
+        <div className={componentStyles.image}>
           NO IMAGE
-        </>
+        </div>
       }
        
-        <Link href={`/posts/${id}`}>
-          <a className={componentStyles.title}>{title}</a>
-        </Link>
-        {previewText && 
-          <p className={componentStyles.previewText}>
-            {previewText}
-          </p>
-        }
-        <div className={componentStyles.readMore}>
-          <Button1
-             href={`/posts/${id}`}
-             text="READ MORE"
-          />
-        </div>
-        <div className={componentStyles.postMetas}>
-          {author &&
-            <span className={componentStyles.author}>{author} | </span>
-          }
-          {date &&
-            <span className={componentStyles.date}>
-              <Date dateString={date}  />
-            </span>
-          }          
-        </div>
-        <SocialIcons
-          instagram="#"
-          facebook="#"
-          twitter="#"
-          tumblr="#"
-          pinterest="#"
-        />
-      
+      {/* data-attr styling */}
+      <div 
+        className={componentStyles.dataAttrTest}
+        data-bg-color={backgroundColor}
+        data-font={font}
+      >
+        <p>data-attr test</p>
+      </div>
+        
     </div>
   )
 }
