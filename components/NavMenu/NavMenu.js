@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import componentStyles from './styles.module.scss'
 import Link from 'next/link'
-import utilStyles from '@styles/utils.module.css'
 import varStyles from '@styles/vars.module.scss'
 import { BsXLg } from "react-icons/bs";
 import Container from '@components/Container'
@@ -28,20 +27,20 @@ export default function NavMenu({ children, home }) {
         <div className={componentStyles.inner}>
 
             <div className={componentStyles.links}>
-              <ul className={utilStyles.list}>
-                <li className={utilStyles.listItem}>
+              <ul className="list">
+                <li className="listItem">
                   <a href="/">Home</a>
                 </li>
-                <li className={utilStyles.listItem}>
+                <li className="listItem">
                   <a href="/posts">Blog</a>
                 </li>
-                <li className={utilStyles.listItem}>
+                <li className="listItem">
                   <a href="/events">Events</a>
                 </li>
-                <li className={utilStyles.listItem}>
+                <li className="listItem">
                   <a href="/about">About</a>
                 </li>
-                <li className={utilStyles.listItem}>
+                <li className="listItem">
                   <a href="/contact">Contact</a>
                 </li>
               </ul>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import componentStyles from './styles.module.scss'
 import Link from 'next/link'
-import utilStyles from '@styles/utils.module.css'
+
 import varStyles from '@styles/vars.module.scss'
 import { BsList } from "react-icons/bs";
 import $ from 'jquery'

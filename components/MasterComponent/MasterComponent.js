@@ -1,13 +1,14 @@
-/*===== Components =====*/
+/*===== Ultility Components =====*/
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 
+/*===== Theme Components =====*/
 import Button1 from '@components/Button1'
 
 /*===== Styles =====*/
 import componentStyles from './styles.module.scss'
-import utilStyles from '@styles/utils.module.css'
+
 
 export default function MasterComponent({ 
   //Props

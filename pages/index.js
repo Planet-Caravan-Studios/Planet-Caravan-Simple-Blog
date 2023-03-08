@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Date from '@components/date'
 import Layout, { siteData } from '@components/Layout'
-import DesktopNav from '@components/DesktopNav'
 import BlogPreview from '@components/BlogPreview'
 import Container from '@components/Container'
 
@@ -35,14 +34,14 @@ export default function Home({ allPostsData }) {
         <section className={utilStyles.textSection}>
           <h1>SIMPLE BLOG TEMPLATE</h1>
           <p>
-            Planet Caravan Studios Simple Blog - this is a template meant to be very basic and barebones, allowing you to apply your own styles and content.
+            <code>Planet Caravan Studios Simple Blog</code> - this is a template meant to be very basic and barebones, allowing you to apply your own styles and content.  We've built out plenty of components for you to build on top of and customize.  We've used a simple black and white style across the template, so you don't have to spend time cleaning out styles that don't work for you.
           </p>
         </section>
 
         <section className={utilStyles.textSection}>
           <h2>Global Site Data</h2>
           <p>
-          'siteData' var is exported from the Layout component and is available across all pages.  This is a simple JSON data file intended for arbitrary use.          
+            Want to build out your content via JSON files?  The 'siteData' var is exported from the Layout component and is available across all pages.  Use this method to make "fill in the blanks" style pages, like this section below:
           </p>
           <ul>
             <li>
