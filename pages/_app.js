@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import $ from 'jquery'
 import 'normalize.css';
+
 //Swiper.JS
 import 'swiper/swiper.scss';
 import 'swiper/components/a11y/a11y.scss';

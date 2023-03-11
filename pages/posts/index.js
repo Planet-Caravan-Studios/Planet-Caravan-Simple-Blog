@@ -1,10 +1,22 @@
+/*===== Utility Components =====*/
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
-import Layout, { siteData } from '@components/layout'
-import utilStyles from '@styles/utils.module.css'
-import { getSortedPostsData } from '@lib/posts'
+import Link from 'next/link'
+
+/*===== Theme Components =====*/
+import Layout from '@components/layout'
 import BlogPreview from '@components/BlogPreview'
 import Container from '@components/Container'
 
+/*===== Styles =====*/
+import pageStyles from '@styles/pages.module.scss'
+
+/*===== JSON Page Content =====*/
+import siteData from "@data/siteData.json"
+import pageData from "@data/pageIndex.json"
+
+/*===== Posts Data =====*/
+import { getSortedPostsData } from '@lib/posts'
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
   return {
@@ -14,7 +26,6 @@ export async function getStaticProps() {
   }
 }
 
-
 export default function Posts({ allPostsData }) {
   return (
     <Layout home>
@@ -23,7 +34,7 @@ export default function Posts({ allPostsData }) {
         <title>Posts | {siteData.siteTitleBase}</title>
       </Head>
 
-      <section className={utilStyles.headingMd}>
+      <section className={pageStyles.headingMd}>
         <Container>
           <p>
             Posts Directory Page
@@ -31,14 +42,14 @@ export default function Posts({ allPostsData }) {
         </Container>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${pageStyles.headingMd} ${pageStyles.padding1px}`}>
         <Container>
           
-          <h2 className={utilStyles.headingLg}>Blog</h2>
-          <ul className={utilStyles.list}>
+          <h2 className={pageStyles.headingLg}>Blog</h2>
+          <ul className={pageStyles.list}>
             
             {allPostsData.map(({ id, date, title, author, previewText, image }) => (
-              <li className={utilStyles.listItem} key={id}>
+              <li className={pageStyles.listItem} key={id}>
                 <BlogPreview
                   id={id}
                   image={image}

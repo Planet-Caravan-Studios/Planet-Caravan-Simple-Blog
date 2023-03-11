@@ -1,18 +1,26 @@
+/*===== Ultility Components =====*/
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.scss'
 import Link from 'next/link'
-import data from "@data/data.json"
 import $ from 'jquery'
 
+/*===== Theme Components =====*/
 import DesktopNav from '@components/DesktopNav'
 import NavMenu from '@components/NavMenu'
 import Footer from '@components/Footer'
 import Container from '@components/Container'
 
-export const siteTitle = 'Next.js Sample Website'
-export const siteData = data
+/*===== Styles =====*/
+import styles from './styles.module.scss'
+
+/*===== Data =====*/
+//import data from "@data/data.json"
+//export const siteTitle = 'Next.js Sample Website'
+//export const siteData = data
+
+/*===== JSON Page Content =====*/
+import siteData from "@data/siteData.json"
 
 export default function Layout({ children, home }) {
   
@@ -40,7 +48,7 @@ export default function Layout({ children, home }) {
         <meta property="og:image"
           content={`/images/planet-caravan-studios-logo.png`}
         />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="og:title" content={siteData.siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>

@@ -1,9 +1,23 @@
-import Layout, { siteData } from '@components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+/*===== Utility Components =====*/
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
-import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
+import Link from 'next/link'
+import Date from '@components/date'
+
+/*===== Theme Components =====*/
+import Layout from '@components/layout'
+import BlogPreview from '@components/BlogPreview'
 import Container from '@components/Container'
+
+/*===== Styles =====*/
+import pageStyles from '@styles/pages.module.scss'
+
+/*===== JSON Page Content =====*/
+import siteData from "@data/siteData.json"
+import pageData from "@data/pageIndex.json"
+
+/*===== Post Data =====*/
+import { getAllPostIds, getPostData } from '@lib/posts'
 
 export default function Post({ postData }) {
   return (
@@ -13,8 +27,8 @@ export default function Post({ postData }) {
       </Head>
       <Container>
         <article>
-          <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-          <div className={utilStyles.lightText}>
+          <h1 className={pageStyles.headingXl}>{postData.title}</h1>
+          <div className={pageStyles.lightText}>
             <Date dateString={postData.date} />
           </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

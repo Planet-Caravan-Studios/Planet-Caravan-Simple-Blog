@@ -27,7 +27,7 @@
 
 
 ### Update Test/Staging Server ###
-This site uses Netlify's auto-deploy functions.  Every time you push to 
+This site uses Netlify's auto-deploy functions.  Every time you push to your main branch, Netlify will auto-deploy for you.
 
 ### Form Configuration ###
 
