@@ -27,20 +27,20 @@ export default function NavMenu({ children, home }) {
         <div className={componentStyles.inner}>
 
             <div className={componentStyles.links}>
-              <ul className="list">
-                <li className="listItem">
+              <ul>
+                <li >
                   <a href="/">Home</a>
                 </li>
-                <li className="listItem">
+                <li >
                   <a href="/posts">Blog</a>
                 </li>
-                <li className="listItem">
+                <li >
                   <a href="/events">Events</a>
                 </li>
-                <li className="listItem">
+                <li >
                   <a href="/about">About</a>
                 </li>
-                <li className="listItem">
+                <li >
                   <a href="/contact">Contact</a>
                 </li>
               </ul>
