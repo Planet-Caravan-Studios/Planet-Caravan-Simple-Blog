@@ -1,6 +1,10 @@
-/*===== Components =====*/
+/*===== Utility Components =====*/
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
-import Layout, { siteData } from '@components/layout'
+import Link from 'next/link'
+
+/*===== Theme Components =====*/
+import Layout from '@components/layout'
 import Container from '@components/Container'
 import HeroSection from '@components/HeroSection'
 
@@ -8,6 +12,7 @@ import HeroSection from '@components/HeroSection'
 import utilStyles from '@styles/utils.module.css'
 
 /*===== JSON Page Content =====*/
+import siteData from "@data/siteData.json"
 import pageData from "@data/pageAbout.json"
 
 /*===== Page Content =====*/
