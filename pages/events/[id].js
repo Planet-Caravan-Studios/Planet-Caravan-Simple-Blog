@@ -14,7 +14,7 @@ import pageStyles from '@styles/pages.module.scss'
 
 /*===== JSON Page Content =====*/
 import siteData from "@data/siteData.json"
-import pageData from "@data/pageIndex.json"
+//import pageData from "@data/pageIndex.json"
 
 /*===== Post Data =====*/
 import { getAllPostIds, getPostData } from '@lib/events'

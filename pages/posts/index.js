@@ -13,7 +13,7 @@ import pageStyles from '@styles/pages.module.scss'
 
 /*===== JSON Page Content =====*/
 import siteData from "@data/siteData.json"
-import pageData from "@data/pageIndex.json"
+//import pageData from "@data/pageIndex.json"
 
 /*===== Posts Data =====*/
 import { getSortedPostsData } from '@lib/posts'
