@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 /*===== Theme Components =====*/
-import Layout from '@components/layout'
+import Layout from '@components/Layout'
 import Container from '@components/Container'
 import HeroSection from '@components/HeroSection'
 import ContactForm from '@components/ContactForm'
