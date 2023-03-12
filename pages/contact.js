@@ -1,6 +1,10 @@
-/*===== Components =====*/
+/*===== Utility Components =====*/
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
-import Layout, { siteData } from '@components/layout'
+import Link from 'next/link'
+
+/*===== Theme Components =====*/
+import Layout from '@components/Layout'
 import Container from '@components/Container'
 import HeroSection from '@components/HeroSection'
 import ContactForm from '@components/ContactForm'
@@ -9,6 +13,7 @@ import ContactForm from '@components/ContactForm'
 import utilStyles from '@styles/utils.module.css'
 
 /*===== JSON Page Content =====*/
+import siteData from "@data/siteData.json"
 import pageData from "@data/pageAbout.json"
 
 /*===== Page Content =====*/

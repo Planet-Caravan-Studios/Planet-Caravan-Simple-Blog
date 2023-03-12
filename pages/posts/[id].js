@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Date from '@components/date'
 
 /*===== Theme Components =====*/
-import Layout from '@components/layout'
+import Layout from '@components/Layout'
 import BlogPreview from '@components/BlogPreview'
 import Container from '@components/Container'
 
@@ -14,7 +14,7 @@ import pageStyles from '@styles/pages.module.scss'
 
 /*===== JSON Page Content =====*/
 import siteData from "@data/siteData.json"
-import pageData from "@data/pageIndex.json"
+//import pageData from "@data/pageIndex.json"
 
 /*===== Post Data =====*/
 import { getAllPostIds, getPostData } from '@lib/posts'
