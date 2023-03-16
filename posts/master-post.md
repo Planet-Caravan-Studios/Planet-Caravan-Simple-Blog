@@ -1,5 +1,5 @@
 ---
-title: "Master Post"
+title: "Master Post Template"
 date: "2022-08-03"
 author: "Alec Reimel"
 
@@ -8,6 +8,8 @@ previewText: "Copy this post for any new posts"
 ---
 
 # README #
+
+---
 
 ### Project-Specific Notes ###
 * Project-specific notes go here.
@@ -55,8 +57,6 @@ When you start the project, check in with the projects's Analyst for the followi
 * Figma/PSD of the design to export individual assets
 * Legal copy/links
 * Social links
-
-### Coming Features ###
 
 ### Plugin/Library Links ###
 * [react-icons](https://react-icons.github.io/react-icons)
