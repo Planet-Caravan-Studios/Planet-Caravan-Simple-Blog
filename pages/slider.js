@@ -1,6 +1,6 @@
 /*===== Components =====*/
 import Head from 'next/head'
-import Layout, { siteData } from '@components/layout'
+import Layout from '@components/layout'
 import Container from '@components/Container'
 import HeroSection from '@components/HeroSection'
 import SliderComponent from '@components/Slider'
@@ -10,7 +10,7 @@ import SliderFX from '@components/SliderFX'
 import utilStyles from '@styles/utils.module.css'
 
 /*===== JSON Page Content =====*/
-import pageData from "@data/pageAbout.json"
+import siteData from "@data/siteData.json"
 
 /*===== Page Content =====*/
 export default function Slider({}) {

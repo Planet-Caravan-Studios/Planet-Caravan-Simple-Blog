@@ -1,10 +1,10 @@
 ---
-title: "Master Post"
+title: "README"
 date: "2022-08-03"
 author: "Alec Reimel"
 
 image: "/images/hm-hero-img.jpg"
-previewText: "Copy this post for any new posts"
+previewText: "Copy of this project's readme file"
 ---
 
 # README
