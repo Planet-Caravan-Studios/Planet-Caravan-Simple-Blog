@@ -6,9 +6,9 @@ import Link from 'next/link'
 import $ from 'jquery'
 
 /*===== Theme Components =====*/
-import DesktopNav from '@components/DesktopNav'
-import NavMenu from '@components/NavMenu'
-import Footer from '@components/Footer'
+import DesktopNav from '@components/NavigationComponents/DesktopNav'
+import NavMenu from '@components/NavigationComponents/NavMenu'
+import Footer from '@components/NavigationComponents/Footer'
 import Container from '@components/Container'
 
 /*===== Styles =====*/

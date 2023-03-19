@@ -2,7 +2,7 @@ import Image from 'next/image'
 import componentStyles from './styles.module.scss'
 import Link from 'next/link'
 import varStyles from '@styles/vars.module.scss'
-import SocialIcons from '@components/SocialIcons'
+import SocialIcons from '@components/ContentComponents/SocialIcons'
 
 const name = 'Planet Caravan Studios'
 export const siteTitle = 'Next.js Sample Website'

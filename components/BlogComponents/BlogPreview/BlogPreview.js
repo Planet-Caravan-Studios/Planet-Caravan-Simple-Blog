@@ -2,7 +2,7 @@ import React from "react"
 import Image from 'next/image'
 import Link from 'next/link'
 import Date from '@components/date'
-import SocialIcons from '@components/SocialIcons'
+import SocialIcons from '@components/ContentComponents/SocialIcons'
 import Button1 from '@components/Button1'
 
 import componentStyles from './styles.module.scss'

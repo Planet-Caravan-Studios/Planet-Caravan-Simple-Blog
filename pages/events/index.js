@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 /*===== Theme Components =====*/
 import Layout from '@components/Layout'
-import BlogPreview from '@components/BlogPreview'
+import BlogPreview from '@components/BlogComponents/BlogPreview'
 import Container from '@components/Container'
 
 /*===== Styles =====*/
