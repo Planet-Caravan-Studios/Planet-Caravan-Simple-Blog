@@ -6,9 +6,9 @@
 //  
 /*========================================*/
 
-/* ============================= */
-/* ===== CSS Comment Header ===== */
-/* ============================= */
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
 @import "@styles/vars.module.scss";
 
 /* ============================= */
@@ -26,6 +26,8 @@ body {
   line-height: 1.6;
   font-size: $clampMedium;
   color: $textColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: $backgroundColor;
   overflow-x: hidden;
 }
@@ -46,7 +48,7 @@ html{
 
   //default link style
   a:not([class]){
-    color: #0070f3;
+    color: $accentColor;
     &:hover {
       text-decoration: underline;
     }

@@ -1,5 +1,5 @@
 ---
-title: "Master Post"
+title: "Master Post Template"
 date: "2022-08-03"
 author: "Alec Reimel"
 
@@ -7,73 +7,235 @@ image: "/images/hm-hero-img.jpg"
 previewText: "Copy this post for any new posts"
 ---
 
-# README #
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+
+
+## Horizontal Rules
+
+___
+
 ---
 
-### Project-Specific Notes ###
-* Project-specific notes go here.
-
-#### Server Links ####
-* Local: http://localhost:3000/
-* Staging: https://planet-caravan-simple-blog-template.netlify.app/
-* Live: 
-
----
-
-### Best Practices ###
-* Use lots of comments and documentation
-* Keep your tabs lined up correctly
-* Follow HTML5 element heirarchy
-* Double check your title tags and favicon
-* Store your local project in a regular folder with no cloud syncing - this can cause issues with running/building the project
-
-### Initialize ###
-* Use Node v16.13.0 - you can just run "npm run nvm" to set
-* run 'npm install'
-* run 'npm run dev' (start and serve commands are the same as this by default, customize them if you need to)
-
-### Initial Server Deploy ###
+***
 
 
-### Update Test/Staging Server ###
+## Typographic replacements
 
-This site uses Netlify's auto-deploy functions.  Every time you push to your main branch, Netlify will auto-deploy for you.
+Enable typographer option to see result.
 
-### Form Configuration ###
-Coming Soon  
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
 
-<br/><br/>
+test.. test... test..... test?..... test!....
 
-#### Page Links ####
-* http://localhost:3000/ - Index/Home
-* http://localhost:3000/posts - Blog posts directory
-* http://localhost:3000/posts/master-post - Post master template
-* http://localhost:3000/events - This is a clone of the blog pages and functionality, and can be renamed to whatever you need, or just ignored/removed.  
+!!!!!! ???? ,,  -- ---
+
+"Smartypants, double quotes" and 'single quotes'
 
 
-### Assets Checklist ###
-When you start the project, check in with the project manager for the following:
-* Font files
-* Logo(s) - as PNGs
-* Favicon - you can usually resize the logo for this
-* Figma/PSD of the design to export individual assets
-* Legal copy/links
-* Social links
+## Emphasis
 
-### Plugin/Library Links ###
-* [react-icons](https://react-icons.github.io/react-icons)
-* [swiper](https://swiperjs.com/)
-* [normalize.css](https://necolas.github.io/normalize.css/)
-* [react-headroom](https://kyleamathews.github.io/react-headroom/)
+**This is bold text**
 
-### Coming Features ###
-* Contact page
-* About page - == In Progress ==
-* [Arbitrary JSON data usage](https://vercel.com/guides/loading-static-file-nextjs-api-route) - == Complete ==
-* [Category and tag filtering on blog pages](https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops/)
-* lodash - js utility library
-* browsersync - sync multiple browser windows
-* Form integration - netilfy forms
+__This is bold text__
 
-### Article Links ###
-* [Set up Google Analytics with react-ga](https://medium.com/@cooperwfloyd/the-most-simple-way-to-track-next-js-page-views-in-google-analytics-8a5c6d981f43)
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+
+
+## Blockquotes
+
+
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
+
+
+## Lists
+
+Unordered
+
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
+
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+Syntax highlighting
+
+``` js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+
+## Tables
+
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+Right aligned columns
+
+| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+
+
+## Images
+
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+![Alt text][id]
+
+With a reference later in the document defining the URL location:
+
+[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+
+
+## Plugins
+
+The killer feature of `markdown-it` is very effective support of
+[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+
+
+### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+
+> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
+
+see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+
+
+### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+
+- 19^th^
+- H~2~O
+
+
+### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
+
+++Inserted text++
+
+
+### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
+
+==Marked text==
+
+
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+
+Footnote 1 link[^first].
+
+Footnote 2 link[^second].
+
+Inline footnote^[Text of inline footnote] definition.
+
+Duplicated footnote reference[^second].
+
+[^first]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^second]: Footnote text.
+
+
+### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+
+Term 1
+
+:   Definition 1
+with lazy continuation.
+
+Term 2 with *inline markup*
+
+:   Definition 2
+
+        { some code, part of Definition 2 }
+
+    Third paragraph of definition 2.
+
+_Compact style:_
+
+Term 1
+  ~ Definition 1
+
+Term 2
+  ~ Definition 2a
+  ~ Definition 2b
+
+
+### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+*[HTML]: Hyper Text Markup Language
+
+### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+
+::: warning
+*here be dragons*
+:::
