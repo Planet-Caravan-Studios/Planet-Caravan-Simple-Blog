@@ -9,7 +9,7 @@ import Container from '@components/Container'
 import HeroSection from '@components/ContentComponents/HeroSection'
 
 /*===== Styles =====*/
-import utilStyles from '@styles/utils.module.css'
+import pageStyles from '@styles/pages.module.scss'
 
 /*===== JSON Page Content =====*/
 import siteData from "@data/siteData.json"
@@ -31,7 +31,7 @@ export default function About({}) {
         backgroundFilter
       />
 
-      <section className={utilStyles.textSection}> 
+      <section className={pageStyles.textSection}> 
         <Container> 
           <h2>Page Data</h2>
           <p>

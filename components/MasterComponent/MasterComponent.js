@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 /*===== Theme Components =====*/
-import Button1 from '@components/Button1'
+import SubComponent from './SubComponent'
 
 /*===== Styles =====*/
 import componentStyles from './styles.module.scss'
@@ -12,8 +12,9 @@ import componentStyles from './styles.module.scss'
 
 export default function MasterComponent({ 
   //Props
-  children, id, image, title, 
-  previewText, author, date
+  children, id, image, imgAlt, title, 
+  previewText, author, date,
+  backgroundColor, font,
 }) {
 
   //JS Goes Here
@@ -51,7 +52,7 @@ export default function MasterComponent({
          <div className={componentStyles.image}>
           <Link className={componentStyles.imgLink} href={`/posts/${id}`} passHref>
             <a>
-              <img src={image} alt="" />
+              <img src={image} alt={imgAlt ? imgAlt : ""} />
             </a>
           </Link>
         </div>

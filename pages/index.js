@@ -50,6 +50,7 @@ export default function Home({ allPostsData }) {
             Want to build out your content via JSON files?  Import a JSON file from the <mark>/data/</mark> folder, and place the variables in your pages to make "fill in the blanks" style content.
           </p>
 
+          <br/>
          
           <codeblock>
             /*===== JSON Page Content =====*/<br/>
@@ -57,6 +58,7 @@ export default function Home({ allPostsData }) {
             import pageData from "@data/pageIndex.json"<br/>
           </codeblock>
           
+          <br/><br/>
 
           <ul>
             <li>
@@ -75,9 +77,16 @@ export default function Home({ allPostsData }) {
               Github: <mark>{siteData.organizationGithub}</mark>
             </li>
           </ul>
+          
+          <br/>    
+
           <p>This method can be reused for individual page content as well.  Just make a new JSON file in the <mark>/data/</mark> folder and import it like in the Layout component.  In the future, more complex methods will be prebuilt.</p>
         </section>
 
+        <br/>
+        <hr/>
+        <br/>
+        
         <section className="">
           <h3 className={pageStyles.headingLg}>Blog Feed</h3>
           <p>The blog for this project is powered by simple Markdown files using frontmatter for variables.  Simply create/modify/delete files in the <mark>/posts/</mark> folder.  A clone of the blog posts has been made in the <mark>/events/</mark> folder, to show you that the blog functionality can be cloned and rebranded as another function.</p>

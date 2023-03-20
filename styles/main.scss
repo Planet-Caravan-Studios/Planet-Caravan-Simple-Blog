@@ -23,7 +23,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   //main font
   font-family: $fontBody, monospace;
-  line-height: 1.6;
+  line-height: 1.35;
   font-size: $clampMedium;
   color: $textColor;
   -webkit-font-smoothing: antialiased;
@@ -38,42 +38,47 @@ body {
   box-sizing: border-box;
 }
 
-html{
+a {
+  color:  $black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-  a {
-    color:  $black;
-    text-decoration: none;
-    cursor: pointer;
+//default link style
+a:not([class]){
+  color: $accentColor;
+  &:hover {
+    text-decoration: underline;
   }
+}
 
-  //default link style
-  a:not([class]){
-    color: $accentColor;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  
-  img {
-    max-width: 100%;
-    display: block;
-  }
+img {
+  max-width: 100%;
+  display: block;
+}
 
-  p{
-    margin:  0;
-  }
+p{
+  margin:  0;
+  line-height: 1.6;
+}
 
-  hr{
-    //border-width: 2px;
-    border: none;
-    height: 2px;
-    background-color: $black
-  }
+hr{
+  //border-width: 2px;
+  border: none;
+  height: 2px;
+  background-color: $black
+}
 
-  h1, h2, h3, h4, h5, h6{
-    line-height: 1.2;
-    margin: 0;
-    font-size: $clampLarge;
+h1, h2, h3, h4, h5, h6{
+  line-height: 1.2;
+  margin: 0;
+  font-size: $clampLarge;
+}
+
+ul{
+
+  li{
+    margin-bottom: 0.5em;
   }
 }
 
