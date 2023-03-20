@@ -2,11 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
-import Date from '@components/date'
+import Date from '@components/BlogComponents/date'
 
 /*===== Theme Components =====*/
 import Layout from '@components/Layout'
-import BlogPreview from '@components/BlogPreview'
+import BlogPreview from '@components/BlogComponents/BlogPreview'
 import Container from '@components/Container'
 
 /*===== Styles =====*/
