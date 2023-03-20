@@ -22,18 +22,23 @@ import { getAllPostIds, getPostData } from '@lib/events'
 export default function Event({ postData }) {
   return (
     <Layout>
+      
       <Head>
         <title>{postData.title} | {siteData.siteTitleBase}</title>
       </Head>
+
       <Container>
         <article>
-          <h1 className={pageStyles.headingXl}>{postData.title}</h1>
+          <h1 className={pageStyles.headingXl}>
+            {postData.title}
+          </h1>
           <div className={pageStyles.lightText}>
             <Date dateString={postData.date} />
           </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
       </Container>
+
     </Layout>
   )
 }

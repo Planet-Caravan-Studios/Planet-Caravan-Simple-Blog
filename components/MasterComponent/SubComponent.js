@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 /*===== Theme Components =====*/
-import Button1 from '@components/Button1'
+
 
 /*===== Styles =====*/
 import componentStyles from './styles.module.scss'
