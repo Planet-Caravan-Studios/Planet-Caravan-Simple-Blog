@@ -6,11 +6,11 @@ import Link from 'next/link'
 /*===== Theme Components =====*/
 import Layout from '@components/Layout'
 import Container from '@components/Container'
-import HeroSection from '@components/HeroSection'
-import ContactForm from '@components/ContactForm'
+import HeroSection from '@components/ContentComponents/HeroSection'
+import ContactForm from '@components/FormComponents/ContactForm'
 
 /*===== Styles =====*/
-import utilStyles from '@styles/utils.module.css'
+import pageStyles from '@styles/pages.module.scss'
 
 /*===== JSON Page Content =====*/
 import siteData from "@data/siteData.json"
@@ -32,7 +32,7 @@ export default function About({}) {
         backgroundFilter
       />
 
-      <section className={utilStyles.textSection}> 
+      <section className={pageStyles.textSection}> 
         <Container> 
           <ContactForm/>
         </Container>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 /*===== Theme Components =====*/
 import Layout from '@components/Layout'
-import BlogPreview from '@components/BlogPreview'
+import BlogPreview from '@components/BlogComponents/BlogPreview'
 import Container from '@components/Container'
 
 /*===== Styles =====*/
@@ -40,40 +40,58 @@ export default function Home({ allPostsData }) {
         <section className={pageStyles.textSection}>
           <h1>SIMPLE BLOG TEMPLATE</h1>
           <p>
-            <code>Planet Caravan Studios Simple Blog</code> - this is a template meant to be very basic and barebones, allowing you to apply your own styles and content.  We've built out plenty of components for you to build on top of and customize.  We've used a simple black and white style across the template, so you don't have to spend time cleaning out styles that don't work for you.
+            <mark>Planet Caravan Studios Simple Blog</mark> - this is a template meant to be very basic and barebones, allowing you to apply your own styles and content.  We've built out plenty of components for you to build on top of and customize.  We've used a simple black and white style across the template, so you don't have to spend time cleaning out styles that don't work for you.
           </p>
         </section>
 
         <section className={pageStyles.textSection}>
           <h2>Global Site Data</h2>
           <p>
-            Want to build out your content via JSON files?  The 'siteData' var is exported from the Layout component and is available across all pages.  Use this method to make "fill in the blanks" style pages, like this section below:
+            Want to build out your content via JSON files?  Import a JSON file from the <mark>/data/</mark> folder, and place the variables in your pages to make "fill in the blanks" style content.
           </p>
+
+          <br/>
+         
+          <codeblock>
+            /*===== JSON Page Content =====*/<br/>
+            import siteData from "@data/siteData.json"<br/>
+            import pageData from "@data/pageIndex.json"<br/>
+          </codeblock>
+          
+          <br/><br/>
+
           <ul>
             <li>
-              Title: <code>{siteData.title}</code>
+              Title: <mark>{siteData.title}</mark>
             </li>
             <li>
-              Description: <code>{siteData.description}</code>
+              Description: <mark>{siteData.description}</mark>
             </li>
             <li>
-              Author: <code>{siteData.author}</code>
+              Author: <mark>{siteData.author}</mark>
             </li>
             <li>
-              Organization: <code>{siteData.organization}</code>
+              Organization: <mark>{siteData.organization}</mark>
             </li>
             <li>
-              Github: <code>{siteData.github}</code>
+              Github: <mark>{siteData.organizationGithub}</mark>
             </li>
           </ul>
-          <p>This method can be reused for individual page content as well.  Just make a new JSON file in the <code>/data/</code> folder and import it like in the Layout component.</p>
+          
+          <br/>    
+
+          <p>This method can be reused for individual page content as well.  Just make a new JSON file in the <mark>/data/</mark> folder and import it like in the Layout component.  In the future, more complex methods will be prebuilt.</p>
         </section>
 
+        <br/>
+        <hr/>
+        <br/>
+        
         <section className="">
           <h3 className={pageStyles.headingLg}>Blog Feed</h3>
-          <p>The blog for this project is powered by simple Markdown files using frontmatter for variables.  Simply create/modify/delete files in the <code>/posts/</code> folder.  A clone of the blog posts has been made in the <code>/events/</code> folder, to show you that the blog functionality can be cloned and rebranded as another function.</p>
+          <p>The blog for this project is powered by simple Markdown files using frontmatter for variables.  Simply create/modify/delete files in the <mark>/posts/</mark> folder.  A clone of the blog posts has been made in the <mark>/events/</mark> folder, to show you that the blog functionality can be cloned and rebranded as another function.</p>
           <br/>
-          <p>The blog functionality, along with it's clone in the events functions, can be renamed to anything that requires dynamic content - such as products.  You can also make as many clones of these functions as you'd like for whatever purposes you need.</p>
+          <p>The blog functionality, along with it's clone in the events functions, can be renamed to anything that requires dynamic content - such as products, people, etc.  You can also make as many clones of these functions as you'd like for whatever purposes you need.</p>
 
           <br/>
           <hr/>

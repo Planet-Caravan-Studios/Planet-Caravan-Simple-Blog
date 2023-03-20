@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 /*===== Theme Components =====*/
 import Layout from '@components/Layout'
-import BlogPreview from '@components/BlogPreview'
+import BlogPreview from '@components/BlogComponents/BlogPreview'
 import Container from '@components/Container'
 
 /*===== Styles =====*/
@@ -36,16 +36,15 @@ export default function Events({ allPostsData }) {
 
       <section className={pageStyles.headingMd}>
         <Container>
-          <p>
+          <h1>
             Events Directory Page
-          </p>
+          </h1>
         </Container>
       </section>
 
       <section className={`${pageStyles.headingMd} ${pageStyles.padding1px}`}>
         <Container>
           
-          <h2 className={pageStyles.headingLg}>Blog</h2>
           <ul className={pageStyles.list}>
             
             {allPostsData.map(({ id, date, title, author, previewText, image }) => (

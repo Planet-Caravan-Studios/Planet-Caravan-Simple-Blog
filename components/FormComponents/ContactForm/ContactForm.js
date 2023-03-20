@@ -1,6 +1,6 @@
 /*===== Components =====*/
 import React from "react"
-import Button1 from '@components/Button1'
+import Button1 from '@components/ContentComponents/Button1'
 
 /*===== Styles =====*/
 import componentStyles from './styles.module.scss'
