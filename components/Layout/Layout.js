@@ -24,7 +24,7 @@ import siteData from "@data/siteData.json"
 
 export default function Layout({ children, home }) {
   
-  useEffect(() => {
+  /*useEffect(() => {
     $(document).ready(function() {
       smoothLoad();
 
@@ -35,7 +35,7 @@ export default function Layout({ children, home }) {
         }, bufferTime);
       }
     });
-  });
+  });*/
 
   return (
     <div id="LayoutOuter" className={styles.outer} data-hidden="true">

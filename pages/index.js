@@ -83,8 +83,8 @@ export default function Home({ allPostsData }) {
           <p>This method can be reused for individual page content as well.  Just make a new JSON file in the <mark>/data/</mark> folder and import it like in the Layout component.  In the future, more complex methods will be prebuilt.</p>
         </section>
 
-        <br/>
         <hr/>
+        <br/>
         <br/>
         
         <section className="">
