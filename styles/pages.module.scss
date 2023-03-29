@@ -6,6 +6,12 @@
 /*========================================*/
 
 /* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+
+/* ================== */
 /* ===== General ===== */
 /* ================== */
 	.heading2Xl {
@@ -68,3 +74,13 @@
 /* ===== Posts Pages ===== */
 /* ====================== */
 .postPage{}
+
+/* ====================== */
+/* ===== Styleguide ===== */
+/* ====================== */
+.styleguide{
+	.styleContainer{
+		border: dashed 2px $primaryColor;
+		padding: $clampMedium;
+	}
+}

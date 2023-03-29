@@ -1,0 +1,52 @@
+/*========================================*/
+//	MasterComponent
+//	
+//	Clone this component out to make 
+//	new components.
+//	
+/*========================================*/
+
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+/* ========================= */
+/* ===== Main Component ===== */
+/* ========================= */
+.FontExample{
+	font-family: $fontBody;
+	font-size: $fontSizeBody;
+	
+	/* ===== Fonts ===== */
+	&[data-font="body"]{
+		font-family: $fontBody;
+	}
+	&[data-font="alt"]{
+		font-family: $fontAlt;	
+	}
+	&[data-font="display"]{
+		font-family: $fontDisplay;
+	}
+
+	/* ===== Font Sizes ===== */
+	&[data-font-size="detail"]{
+		font-size: $fontSizeDetail;
+	}
+	&[data-font-size="body"]{
+		font-size: $fontSizeBody;
+	}
+	&[data-font-size="subhead"]{
+		font-size: $fontSizeSubhead;
+	}
+	&[data-font-size="heading"]{
+		font-size: $fontSizeHeading;
+	}
+}
+
+/* ======================== */
+/* ===== Sub Component ===== */
+/* ======================== */
+.SubComponent{
+	
+}
