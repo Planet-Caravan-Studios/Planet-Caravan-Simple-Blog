@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Layout from '@components/Layout'
 import Container from '@components/Container'
 import FontExample from '@components/StyleguideComponents/FontExample'
+import ColorExample from '@components/StyleguideComponents/ColorExample'
 
 /*===== Styles =====*/
 import pageStyles from '@styles/pages.module.scss'
@@ -57,6 +58,17 @@ export default function Home({ allPostsData }) {
               <h2>Colors</h2>
               <div className={pageStyles.styleContainer}>
                 
+                <ColorExample
+                  color="#212121"
+                  colorVar="$black"
+                  namedColorVar="$primaryColor, $textColor"
+                />
+
+                <ColorExample
+                  color="#ececec"
+                  colorVar="$grey_1"
+                />
+
               </div>
             </Container>
            </section>

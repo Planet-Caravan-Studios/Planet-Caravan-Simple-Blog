@@ -82,5 +82,10 @@
 	.styleContainer{
 		border: dashed 2px $primaryColor;
 		padding: $clampMedium;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 5%;
 	}
 }
