@@ -1,4 +1,7 @@
 {
+  "name": "planet-caravan-simple-blog",
+  "version": "0.1.0",
+  "author": "Alec Reimel <alecreimel@gmail.com>",
   "private": false,
   "scripts": {
     "dev": "next dev",
