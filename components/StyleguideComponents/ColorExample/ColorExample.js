@@ -21,11 +21,11 @@ export default function ColorExample({
   return (
     <div 
       className={componentStyles.ColorExample}
-      style={{ color: color }}
+      /*style={{ color: color }}*/
     >
-      {color && color}
-      {colorVar && colorVar}
-      {namedColorVar && namedColorVar}
+      <p>{color && color}</p>
+      <p>{colorVar && colorVar}</p>
+      <p>{namedColorVar && namedColorVar}</p>
     </div>
   )
 }
