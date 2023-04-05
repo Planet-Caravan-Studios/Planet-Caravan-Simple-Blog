@@ -29,8 +29,15 @@ export default function FontExample({
       data-font-style={fontStyle}
       data-font-color={color}
     >
-      {children && children}
-      {sampleText && sampleText}
+      <div className={componentStyles.fontMeta}>
+        <p>Font Name: "Roboto Mono"</p>
+        <p>Var Name: ${font}</p>
+        <p>Font Size: $fontSize{fontSize}</p>
+      </div>
+      <hr/>
+      {sampleText && 
+        <p>{sampleText}</p>
+      }
     </div>
   )
 }

@@ -56,6 +56,9 @@ export default function Home({ allPostsData }) {
           <section className={pageStyles.textSection}>
             <Container>
               <h2>Colors</h2>
+              <p>
+                Try to use only SCSS vars in your style code.  This way, you can change all instances of that color in one spot.  You can also use "named variables" like $primaryColor and $accentColor to more easily set the overall theme of the project.
+              </p>
               <div className={pageStyles.styleContainer}>
                 
                 <ColorExample
@@ -65,8 +68,30 @@ export default function Home({ allPostsData }) {
                 />
 
                 <ColorExample
-                  color="#ececec"
-                  colorVar="$grey_1"
+                  color="#CCCCCC"
+                  colorVar="$lightGrey"
+                />
+
+                <ColorExample
+                  color="#3F3F3F"
+                  colorVar="$darkGrey"
+                />
+
+                <ColorExample
+                  color="#FB0000"
+                  colorVar="$red"
+                />
+
+                <ColorExample
+                  color="#D96D01"
+                  colorVar="$orange"
+                  namedColorVar="$accentColor2"
+                />
+
+                <ColorExample
+                  color="#BA4103"
+                  colorVar="$darkOrange"
+                  namedColorVar="$accentColor"
                 />
 
               </div>

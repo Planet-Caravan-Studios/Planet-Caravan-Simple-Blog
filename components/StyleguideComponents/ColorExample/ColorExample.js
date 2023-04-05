@@ -21,11 +21,17 @@ export default function ColorExample({
   return (
     <div 
       className={componentStyles.ColorExample}
-      /*style={{ color: color }}*/
+      data-color={colorVar}
+      style={{ backgroundColor: color }}
     >
-      <p>{color && color}</p>
-      <p>{colorVar && colorVar}</p>
-      <p>{namedColorVar && namedColorVar}</p>
+      <p>Hex: {color && color}</p>
+      <p>Var: {colorVar && colorVar}</p>
+      {namedColorVar && 
+        <p>
+          <hr/>
+          Named Vars: {namedColorVar}
+        </p>
+      }
     </div>
   )
 }

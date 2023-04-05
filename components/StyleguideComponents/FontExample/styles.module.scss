@@ -15,8 +15,13 @@
 /* ===== Main Component ===== */
 /* ========================= */
 .FontExample{
+	width:  300px;
+	max-width: 100%;
+	//aspect-ratio: 1/1;
 	font-family: $fontBody;
 	font-size: $fontSizeBody;
+	padding: 15px;
+	border: dashed 2px $primaryColor;
 	
 	/* ===== Fonts ===== */
 	&[data-font="body"]{
@@ -41,6 +46,13 @@
 	}
 	&[data-font-size="heading"]{
 		font-size: $fontSizeHeading;
+	}
+
+	.fontMeta{
+		font-size: $fontSizeDetail;
+		p{
+			margin-bottom: 0;
+		}
 	}
 }
 

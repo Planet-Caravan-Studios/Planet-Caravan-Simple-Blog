@@ -9,10 +9,10 @@ Description:	Store SCSS vars here
 
 /***** Color Variables *****/
 	$black: 				#212121;
-	$white: 				#fafafa;
-	$grey_1:			#ececec;
-	$grey_2:			#3e3e3e;
-	$red: 				#fb0000;
+	$white: 				#FAFAFA;
+	$lightGrey:		#CCCCCC;
+	$darkGrey:		#3F3F3F;
+	$red: 				#FB0000;
 	$orange: 			#D96D01;
 	$darkOrange:		#BA4103;
 
@@ -23,6 +23,7 @@ Description:	Store SCSS vars here
 	$backgroundColor:		$white;
 	$textColor:				$black;
 	$accentColor:			$darkOrange;
+	$accentColor2:			$orange;
 
 
 /***** Fonts *****/
