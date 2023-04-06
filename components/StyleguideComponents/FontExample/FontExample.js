@@ -32,7 +32,7 @@ export default function FontExample({
       <div className={componentStyles.fontMeta}>
         <p>Font Name: "Roboto Mono"</p>
         <p>Var Name: ${font}</p>
-        <p>Font Size: $fontSize{fontSize}</p>
+        <p>Font Size: ${fontSize}</p>
       </div>
       <hr/>
       {sampleText && 

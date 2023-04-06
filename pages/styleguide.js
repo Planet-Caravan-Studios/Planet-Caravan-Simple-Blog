@@ -8,6 +8,7 @@ import Layout from '@components/Layout'
 import Container from '@components/Container'
 import FontExample from '@components/StyleguideComponents/FontExample'
 import ColorExample from '@components/StyleguideComponents/ColorExample'
+import PlaceholderContent from '@components/ContentComponents/PlaceholderContent'
 
 /*===== Styles =====*/
 import pageStyles from '@styles/pages.module.scss'
@@ -48,7 +49,7 @@ export default function Home({ allPostsData }) {
             <Container>
               <h2>Logos</h2>
               <div className={pageStyles.styleContainer}>
-                
+                <PlaceholderContent/>
               </div>
             </Container>
            </section>
@@ -101,6 +102,7 @@ export default function Home({ allPostsData }) {
            <section className={pageStyles.textSection}>
              <Container>
                <h2>Fonts &amp; Font Sizes</h2>
+               <p>Similar to working with colors, try to always use SCSS variables to set fonts and font sizes.  This will let you swap out fonts and adjust font sizes across your project in seconds.</p>
                <div className={pageStyles.styleContainer}>
                 <FontExample
                   font="body"
@@ -142,7 +144,18 @@ export default function Home({ allPostsData }) {
                   
                 </div>
               </Container>
-             </section>          
+             </section>      
+
+             <section className={pageStyles.textSection}>
+               <Container>
+                 <h2>PlaceholderContent</h2>
+                 <p>Use this component to fill in missing content.</p>
+                 <div className={pageStyles.styleContainer}>
+                   <PlaceholderContent/>
+                 </div>
+               </Container>
+              </section>
+
         </div>
       
     </Layout>
