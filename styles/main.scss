@@ -83,34 +83,34 @@ ul{
 }
 
 code{
-  background-color: $grey_2;
+  background-color: $darkGrey;
   padding: 2px 10px;
-  color: $grey_1;
+  color: $lightGrey;
   //border: 1px solid $black;
 }
 
 codeblock{
   display: inline-block;
-  background-color: $grey_2;
+  background-color: $darkGrey;
   padding: 0px $clampLarge $clampMedium;
-  color: $grey_1;
+  color: $white;
   
   &:before{
     content: "[CODE BLOCK]";
     display: block;
     font-size: $clampExtraSmall;
-    color: $grey_1;
+    color: $white;
     padding-top: 1em;
     padding-bottom: 0.5em;
-    border-bottom: solid 1px $grey_1;
+    border-bottom: solid 1px $lightGrey;
     margin-bottom: 0.5em;
   }
 }
 
 mark{
-  background-color: $grey_2;
+  background-color: $darkGrey;
   padding: 2px 10px;
-  color: $grey_1;
+  color: $white;
 }
 
 

@@ -6,6 +6,12 @@
 /*========================================*/
 
 /* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+
+/* ================== */
 /* ===== General ===== */
 /* ================== */
 	.heading2Xl {
@@ -45,9 +51,37 @@
 		margin: 0 0 1.25em;
 	}
 
-	.textSection{
-		margin-bottom: 100px;
-	}
+	/* ===== Flex Row ===== */
+		.row{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+
+			//justify-content settings
+			&[data-flex-justify="start"]{justify-content:flex-start;}
+			&[data-flex-justify="center"]{justify-content: center;}
+			&[data-flex-justify="end"]{justify-content: flex-end;}
+
+			//align-items settings
+			&[data-flex-align="start"]{align-items:flex-start;}
+			&[data-flex-align="center"]{align-items: center;}
+			&[data-flex-align="end"]{align-items: flex-end;}
+
+			//gap settings
+			&[data-flex-gap="small"]{gap: 0.25em;}
+			&[data-flex-gap="medium"]{gap: 1em;}
+			&[data-flex-gap="large"]{gap: 2.5em;}
+		}
+
+	/* ===== General Text Section ===== */
+		.textSection{
+			margin-bottom: 100px;
+			p{
+				margin-bottom: 1em;
+			}
+		}
 
 /* ========================== */
 /* ===== Index/Home Page ===== */
@@ -68,3 +102,19 @@
 /* ===== Posts Pages ===== */
 /* ====================== */
 .postPage{}
+
+/* ====================== */
+/* ===== Styleguide ===== */
+/* ====================== */
+.styleguide{
+	.styleContainer{
+		border: dashed 2px $primaryColor;
+		padding: $clampMedium;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		//align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 1em;
+	}
+}
