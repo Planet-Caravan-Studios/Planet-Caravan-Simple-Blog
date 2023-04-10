@@ -44,11 +44,13 @@ a {
   cursor: pointer;
 }
 
-//default link style
+//default link style when no class is applied
 a:not([class]){
   color: $accentColor;
+  text-decoration: underline;
+  text-decoration-style: dotted;
   &:hover {
-    text-decoration: underline;
+    text-decoration-style: solid;
   }
 }
 

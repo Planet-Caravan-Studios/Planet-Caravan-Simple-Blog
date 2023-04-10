@@ -15,7 +15,7 @@
 /* ===== Main Component ===== */
 /* ========================= */
 .FontExample{
-	width:  300px;
+	width:  calc(50% - 1rem);
 	max-width: 100%;
 	//aspect-ratio: 1/1;
 	font-family: $fontBody;
