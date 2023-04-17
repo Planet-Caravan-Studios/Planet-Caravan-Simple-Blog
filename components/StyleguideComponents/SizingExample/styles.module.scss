@@ -1,0 +1,60 @@
+/*========================================*/
+//	MasterComponent
+//	
+//	Clone this component out to make 
+//	new components.
+//	
+/*========================================*/
+
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+/* ========================= */
+/* ===== Main Component ===== */
+/* ========================= */
+.SizingExample{
+	padding: 15px;
+	border: dashed 2px $primaryColor;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	.sizeMeta{
+		font-size: $clampExtraSmall;
+		margin-top: 1em;
+		padding-top: 1em;
+		border-top: solid 2px $black;
+	}
+	
+	.sizeBox{
+		aspect-ratio: 1/1;
+		background-color: $black;
+		//size data-attrs
+		&[data-size="clampExtraSmall"]{
+			width: $clampExtraSmall;
+		}
+		&[data-size="clampSmall"]{
+			width: $clampSmall;
+		}
+		&[data-size="clampMedium"]{
+			width: $clampMedium;
+		}
+		&[data-size="clampLarge"]{
+			width: $clampLarge;
+		}
+		&[data-size="clampExtraLarge"]{
+			width: $clampExtraLarge;
+		}
+	}
+	
+
+}
+
+/* ======================== */
+/* ===== Sub Component ===== */
+/* ======================== */
+.SubComponent{
+	
+}

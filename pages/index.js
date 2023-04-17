@@ -45,7 +45,14 @@ export default function Home({ allPostsData }) {
         </section>
 
         <section className={pageStyles.textSection}>
-          <h2>Global Site Data</h2>
+          <h2>STYLEGUIDE</h2>
+          <p>
+            Check out the <a href="/styleguide">Styleguide page</a> - this will give you a quick overview of the project's default styles.  As you update the site with your own styles, it will reflect any changes and provide you with your own custom styleguide.
+          </p>
+        </section>
+
+        <section className={pageStyles.textSection}>
+          <h3>Global Site Data</h3>
           <p>
             Want to build out your content via JSON files?  Import a JSON file from the <mark>/data/</mark> folder, and place the variables in your pages to make "fill in the blanks" style content.
           </p>
@@ -88,7 +95,7 @@ export default function Home({ allPostsData }) {
         <br/>
         
         <section className="">
-          <h3 className={pageStyles.headingLg}>Blog Feed</h3>
+          <h4 className={pageStyles.headingLg}>Blog Feed</h4>
           <p>The blog for this project is powered by simple Markdown files using frontmatter for variables.  Simply create/modify/delete files in the <mark>/posts/</mark> folder.  A clone of the blog posts has been made in the <mark>/events/</mark> folder, to show you that the blog functionality can be cloned and rebranded as another function.</p>
           <br/>
           <p>The blog functionality, along with it's clone in the events functions, can be renamed to anything that requires dynamic content - such as products, people, etc.  You can also make as many clones of these functions as you'd like for whatever purposes you need.</p>
