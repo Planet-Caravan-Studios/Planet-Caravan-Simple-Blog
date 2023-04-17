@@ -47,7 +47,7 @@ export default function Home({ allPostsData }) {
         <section className={pageStyles.textSection}>
           <h2>STYLEGUIDE</h2>
           <p>
-            Check out the <a href="/styleguide">Styleguide page</a> - this will give you a quick overview of the project's default styles.  As you update the site with your own styles, it will reflect any chnges and provide you with your own custom styleguide.
+            Check out the <a href="/styleguide">Styleguide page</a> - this will give you a quick overview of the project's default styles.  As you update the site with your own styles, it will reflect any changes and provide you with your own custom styleguide.
           </p>
         </section>
 
