@@ -6,15 +6,23 @@ Description:	Store SCSS vars here
 
 **************************************************/
 
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/fonts.module.scss";
+
 
 /***** Color Variables *****/
 	$black: 				#212121;
 	$white: 				#FAFAFA;
 	$lightGrey:		#CCCCCC;
 	$darkGrey:		#3F3F3F;
-	$red: 				#FB0000;
+	$yellow:				#F6AE0A;
 	$orange: 			#D96D01;
-	$darkOrange:		#BA4103;
+	$darkOrange:		#DB3922;
+	$brow:				#402418;
+	$red: 				#FB0000;
+	
 
 /***** Named Colors *****/
 	//only use other vars
@@ -27,9 +35,9 @@ Description:	Store SCSS vars here
 
 
 /***** Fonts *****/
-	$fontBody:			"Roboto Mono";
-	$fontDisplay:	"Roboto Mono";
-	$fontAlt:			"Roboto Mono";
+	$fontBody:			"roboto_monoregular";
+	$fontDisplay:	"westminsterregular";
+	$fontAlt:			"flow_blockregular";
 
 /***** Dynamic Font Sizes *****/
 	$clampExtraSmall:		clamp(8px, 1vw, 12px);
