@@ -17,11 +17,12 @@ Description:	Store SCSS vars here
 	$white: 				#FAFAFA;
 	$lightGrey:		#CCCCCC;
 	$darkGrey:		#3F3F3F;
+	$cream:				#EFD9AF;
 	$yellow:				#F6AE0A;
-	$orange: 			#D96D01;
-	$darkOrange:		#DB3922;
-	$brow:				#402418;
-	$red: 				#FB0000;
+	$orange: 			#F27719;
+	$red: 				#DB3922;
+	$brown:				#402418;
+	
 	
 
 /***** Named Colors *****/
@@ -30,8 +31,10 @@ Description:	Store SCSS vars here
 	$secondaryColor:		$white;
 	$backgroundColor:		$white;
 	$textColor:				$black;
-	$accentColor:			$darkOrange;
+	$accentColor:			$red;
 	$accentColor2:			$orange;
+	$accentColor3:			$yellow;
+	$accentColor4:			$brown;
 
 
 /***** Fonts *****/

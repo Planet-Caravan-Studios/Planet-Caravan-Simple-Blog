@@ -71,6 +71,12 @@ export default function Home({ allPostsData }) {
                 />
 
                 <ColorExample
+                  color="#FAFAFA"
+                  colorVar="$white"
+                  namedColorVar="$secondaryColor, $backgroundColor"
+                />
+
+                <ColorExample
                   color="#CCCCCC"
                   colorVar="$lightGrey"
                 />
@@ -81,20 +87,32 @@ export default function Home({ allPostsData }) {
                 />
 
                 <ColorExample
-                  color="#FB0000"
-                  colorVar="$red"
+                  color="#EFD9AF"
+                  colorVar="$cream"
                 />
 
                 <ColorExample
-                  color="#D96D01"
+                  color="#F6AE0A"
+                  colorVar="$yellow"
+                  namedColorVar="$accentColor3"
+                />
+
+                <ColorExample
+                  color="#F27719"
                   colorVar="$orange"
                   namedColorVar="$accentColor2"
                 />
 
                 <ColorExample
                   color="#BA4103"
-                  colorVar="$darkOrange"
+                  colorVar="$red"
                   namedColorVar="$accentColor"
+                />
+
+                <ColorExample
+                  color="#402418"
+                  colorVar="$brown"
+                  namedColorVar="$accentColor4"
                 />
 
               </div>
@@ -128,6 +146,30 @@ export default function Home({ allPostsData }) {
                     sampleText="Lorem Ipsum 123"
                   />
                </div>
+               <br/>
+               <div className={pageStyles.styleContainer}>
+                  <FontExample
+                    font="fontBody"
+                    fontSize="fontSizeDetail"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontBody"
+                    fontSize="fontSizeBody"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontBody"
+                    fontSize="fontSizeSubhead"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontBody"
+                    fontSize="fontSizeHeading"
+                    sampleText="Lorem Ipsum 123"
+                  />
+               </div>
+               
              </Container>
             </section>
 
