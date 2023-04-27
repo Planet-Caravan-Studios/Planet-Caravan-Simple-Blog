@@ -124,47 +124,85 @@ export default function Home({ allPostsData }) {
                <h2>Fonts &amp; Font Sizes</h2>
                <p>Similar to working with colors, try to always use SCSS variables to set fonts and font sizes.  This will let you swap out fonts and adjust font sizes across your project in seconds.</p>
                <br/>
+               {/*Body Font*/}
                <div className={pageStyles.styleContainer}>
                   <FontExample
                     font="fontBody"
+                    fontName="Roboto Mono"
                     fontSize="fontSizeDetail"
                     sampleText="Lorem Ipsum 123"
                   />
                   <FontExample
                     font="fontBody"
+                    fontName="Roboto Mono"
                     fontSize="fontSizeBody"
                     sampleText="Lorem Ipsum 123"
                   />
                   <FontExample
                     font="fontBody"
+                    fontName="Roboto Mono"
                     fontSize="fontSizeSubhead"
                     sampleText="Lorem Ipsum 123"
                   />
                   <FontExample
                     font="fontBody"
+                    fontName="Roboto Mono"
                     fontSize="fontSizeHeading"
                     sampleText="Lorem Ipsum 123"
                   />
                </div>
                <br/>
+               {/*Display Font*/}
                <div className={pageStyles.styleContainer}>
                   <FontExample
-                    font="fontBody"
+                    font="fontDisplay"
+                    fontName="Westminster"
                     fontSize="fontSizeDetail"
                     sampleText="Lorem Ipsum 123"
                   />
                   <FontExample
-                    font="fontBody"
+                    font="fontDisplay"
+                    fontName="Westminster"
                     fontSize="fontSizeBody"
                     sampleText="Lorem Ipsum 123"
                   />
                   <FontExample
-                    font="fontBody"
+                    font="fontDisplay"
+                    fontName="Westminster"
                     fontSize="fontSizeSubhead"
                     sampleText="Lorem Ipsum 123"
                   />
                   <FontExample
-                    font="fontBody"
+                    font="fontDisplay"
+                    fontName="Westminster"
+                    fontSize="fontSizeHeading"
+                    sampleText="Lorem Ipsum 123"
+                  />
+               </div>
+               <br/>
+               {/*Alt Font*/}
+               <div className={pageStyles.styleContainer}>
+                  <FontExample
+                    font="fontAlt"
+                    fontName="Flow Block"
+                    fontSize="fontSizeDetail"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontAlt"
+                    fontName="Flow Block"
+                    fontSize="fontSizeBody"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontAlt"
+                    fontName="Flow Block"
+                    fontSize="fontSizeSubhead"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontAlt"
+                    fontName="Flow Block"
                     fontSize="fontSizeHeading"
                     sampleText="Lorem Ipsum 123"
                   />
