@@ -238,10 +238,12 @@ export default function Home({ allPostsData }) {
              <section className={pageStyles.textSection}>
                <Container>
                  <h2>PlaceholderContent</h2>
-                 <p>Use this component to fill in missing content.</p>
+                 <p>Use this component to fill in missing content and indicate that it will be replaced with other content.</p>
                  <br/>
                  <div className={pageStyles.styleContainer}>
-                   <PlaceholderContent/>
+                   <PlaceholderContent>
+                     The PlaceholderContent component can be left empty, or you can give it a message to indiciate what it will be replaced with.
+                   </PlaceholderContent>
                  </div>
                </Container>
               </section>

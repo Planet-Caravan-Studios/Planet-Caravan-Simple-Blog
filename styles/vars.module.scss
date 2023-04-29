@@ -43,11 +43,13 @@ Description:	Store SCSS vars here
 	$fontAlt:			"flow_blockregular";
 
 /***** Dynamic Font Sizes *****/
+	$clampXXS:					clamp(4px, 0.65vw, 8px);
 	$clampExtraSmall:		clamp(8px, 1vw, 12px);
 	$clampSmall: 				clamp(12px, 1.5vw, 16px);
 	$clampMedium: 			clamp(14px, 2vw, 20px);
 	$clampLarge: 			clamp(24px, 4vw, 36px);
 	$clampExtraLarge: 	clamp(36px, 5.5vw, 52px);
+	$clampXXL: 				clamp(45px, 6vw, 65px);
 
 /***** Named Font Sizes *****/
 	$fontSizeHeading:		$clampExtraLarge;

@@ -21,7 +21,15 @@ export default function PlaceholderContent({
 
   return (
     <div className={componentStyles.PlaceholderContent}>
-    {children ? children : "[Placeholder Content]"}        
+      <div className={componentStyles.title}>
+        [Placeholder Content]
+      </div>
+      {children && 
+        <p>
+        <hr/>
+          {children}
+        </p>
+      }
     </div>
   )
 }
