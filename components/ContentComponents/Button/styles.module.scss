@@ -6,10 +6,20 @@
 	border: solid 1px $black;
 	background-color: $white;
 	padding: 0.25em 1em 0.35em;
-	transition: $transitionMedium;
+	transition: $transitionFast;
 	&:hover{
 		color: $white;
 		border: solid 1px $black;
 		background-color: $black;
+	}
+	&[data-button-style="alt"]{
+		background-color: $black;
+		color: $white;
+		border: solid 1px $black;
+		&:hover{
+			color: $white;
+			border: solid 1px $accentColor;
+			background-color: $accentColor;
+		}
 	}
 }

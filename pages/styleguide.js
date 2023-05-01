@@ -220,7 +220,17 @@ export default function Home({ allPostsData }) {
                     When a text link has no set class, it will use <a href="/styleguide">$accentColor</a> as its text-color, with a <a href="/styleguide">dotted underline</a> that changes to solid on hover.
                   </p>
                   <hr/>
-                  <Button text="Regular Button"/>
+                  <Button 
+                    text="Regular Button"
+                    href="/"
+                    target="_blank"
+                  />
+                  <Button 
+                    text="Alt Button"
+                    href="/"
+                    target="_blank"
+                    buttonStyle="alt"
+                  />
                 </div>
               </Container>
              </section>
