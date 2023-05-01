@@ -10,6 +10,7 @@ import FontExample from '@components/StyleguideComponents/FontExample'
 import ColorExample from '@components/StyleguideComponents/ColorExample'
 import PlaceholderContent from '@components/ContentComponents/PlaceholderContent'
 import SizingExample from '@components/StyleguideComponents/SizingExample'
+import Button from '@components/ContentComponents/Button'
 
 /*===== Styles =====*/
 import pageStyles from '@styles/pages.module.scss'
@@ -219,9 +220,7 @@ export default function Home({ allPostsData }) {
                     When a text link has no set class, it will use <a href="/styleguide">$accentColor</a> as its text-color, with a <a href="/styleguide">dotted underline</a> that changes to solid on hover.
                   </p>
                   <hr/>
-                  <p>
-                    When a text link has no set class, it will use <a href="/styleguide">$accentColor</a> as its text-color, with a <a href="/styleguide">dotted underline</a> that changes to solid on hover.
-                  </p>
+                  <Button text="Regular Button"/>
                 </div>
               </Container>
              </section>

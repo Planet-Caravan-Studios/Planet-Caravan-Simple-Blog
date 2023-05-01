@@ -1,18 +1,25 @@
-import React from "react"
+/*===== Ultility Components =====*/
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image'
+import Link from 'next/link'
+
+/*===== Theme Components =====*/
+//import SubComponent from './SubComponent'
+
+/*===== Styles =====*/
 import componentStyles from './styles.module.scss'
 
-
-export default function Button1({ 
+export default function Button({ 
   href, text, target, dataAttr
 }) {
   return (
-    <a 
+    <Link 
       href={href ? href : '#'}
       target={target ? target : '_self'}
-      className={componentStyles.Button1}
+      className={componentStyles.Button}
       {...dataAttr && dataAttr}
     >
-      {text}
-    </a>      
+      <a>{text}</a>
+    </Link>      
   )
 }
