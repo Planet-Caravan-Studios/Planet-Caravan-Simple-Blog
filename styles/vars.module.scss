@@ -6,15 +6,24 @@ Description:	Store SCSS vars here
 
 **************************************************/
 
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/fonts.module.scss";
+
 
 /***** Color Variables *****/
 	$black: 				#212121;
 	$white: 				#FAFAFA;
 	$lightGrey:		#CCCCCC;
 	$darkGrey:		#3F3F3F;
-	$red: 				#FB0000;
-	$orange: 			#D96D01;
-	$darkOrange:		#BA4103;
+	$cream:				#EFD9AF;
+	$yellow:				#F6AE0A;
+	$orange: 			#F27719;
+	$red: 				#DB3922;
+	$brown:				#402418;
+	
+	
 
 /***** Named Colors *****/
 	//only use other vars
@@ -22,21 +31,25 @@ Description:	Store SCSS vars here
 	$secondaryColor:		$white;
 	$backgroundColor:		$white;
 	$textColor:				$black;
-	$accentColor:			$darkOrange;
+	$accentColor:			$red;
 	$accentColor2:			$orange;
+	$accentColor3:			$yellow;
+	$accentColor4:			$brown;
 
 
 /***** Fonts *****/
-	$fontBody:			"Roboto Mono";
-	$fontDisplay:	"Roboto Mono";
-	$fontAlt:			"Roboto Mono";
+	$fontBody:			"roboto_monoregular";
+	$fontDisplay:	"westminsterregular";
+	$fontAlt:			"flow_blockregular";
 
 /***** Dynamic Font Sizes *****/
+	$clampXXS:					clamp(4px, 0.65vw, 8px);
 	$clampExtraSmall:		clamp(8px, 1vw, 12px);
 	$clampSmall: 				clamp(12px, 1.5vw, 16px);
 	$clampMedium: 			clamp(14px, 2vw, 20px);
 	$clampLarge: 			clamp(24px, 4vw, 36px);
 	$clampExtraLarge: 	clamp(36px, 5.5vw, 52px);
+	$clampXXL: 				clamp(45px, 6vw, 65px);
 
 /***** Named Font Sizes *****/
 	$fontSizeHeading:		$clampExtraLarge;

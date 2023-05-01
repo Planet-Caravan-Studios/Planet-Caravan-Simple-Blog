@@ -10,6 +10,7 @@ import FontExample from '@components/StyleguideComponents/FontExample'
 import ColorExample from '@components/StyleguideComponents/ColorExample'
 import PlaceholderContent from '@components/ContentComponents/PlaceholderContent'
 import SizingExample from '@components/StyleguideComponents/SizingExample'
+import Button from '@components/ContentComponents/Button'
 
 /*===== Styles =====*/
 import pageStyles from '@styles/pages.module.scss'
@@ -71,6 +72,12 @@ export default function Home({ allPostsData }) {
                 />
 
                 <ColorExample
+                  color="#FAFAFA"
+                  colorVar="$white"
+                  namedColorVar="$secondaryColor, $backgroundColor"
+                />
+
+                <ColorExample
                   color="#CCCCCC"
                   colorVar="$lightGrey"
                 />
@@ -81,20 +88,32 @@ export default function Home({ allPostsData }) {
                 />
 
                 <ColorExample
-                  color="#FB0000"
-                  colorVar="$red"
+                  color="#EFD9AF"
+                  colorVar="$cream"
                 />
 
                 <ColorExample
-                  color="#D96D01"
+                  color="#F6AE0A"
+                  colorVar="$yellow"
+                  namedColorVar="$accentColor3"
+                />
+
+                <ColorExample
+                  color="#F27719"
                   colorVar="$orange"
                   namedColorVar="$accentColor2"
                 />
 
                 <ColorExample
                   color="#BA4103"
-                  colorVar="$darkOrange"
+                  colorVar="$red"
                   namedColorVar="$accentColor"
+                />
+
+                <ColorExample
+                  color="#402418"
+                  colorVar="$brown"
+                  namedColorVar="$accentColor4"
                 />
 
               </div>
@@ -106,28 +125,90 @@ export default function Home({ allPostsData }) {
                <h2>Fonts &amp; Font Sizes</h2>
                <p>Similar to working with colors, try to always use SCSS variables to set fonts and font sizes.  This will let you swap out fonts and adjust font sizes across your project in seconds.</p>
                <br/>
+               {/*Body Font*/}
                <div className={pageStyles.styleContainer}>
                   <FontExample
                     font="fontBody"
+                    fontName="Roboto Mono"
                     fontSize="fontSizeDetail"
                     sampleText="Lorem Ipsum 123"
                   />
                   <FontExample
                     font="fontBody"
+                    fontName="Roboto Mono"
                     fontSize="fontSizeBody"
                     sampleText="Lorem Ipsum 123"
                   />
                   <FontExample
                     font="fontBody"
+                    fontName="Roboto Mono"
                     fontSize="fontSizeSubhead"
                     sampleText="Lorem Ipsum 123"
                   />
                   <FontExample
                     font="fontBody"
+                    fontName="Roboto Mono"
                     fontSize="fontSizeHeading"
                     sampleText="Lorem Ipsum 123"
                   />
                </div>
+               <br/>
+               {/*Display Font*/}
+               <div className={pageStyles.styleContainer}>
+                  <FontExample
+                    font="fontDisplay"
+                    fontName="Westminster"
+                    fontSize="fontSizeDetail"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontDisplay"
+                    fontName="Westminster"
+                    fontSize="fontSizeBody"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontDisplay"
+                    fontName="Westminster"
+                    fontSize="fontSizeSubhead"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontDisplay"
+                    fontName="Westminster"
+                    fontSize="fontSizeHeading"
+                    sampleText="Lorem Ipsum 123"
+                  />
+               </div>
+               <br/>
+               {/*Alt Font*/}
+               <div className={pageStyles.styleContainer}>
+                  <FontExample
+                    font="fontAlt"
+                    fontName="Flow Block"
+                    fontSize="fontSizeDetail"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontAlt"
+                    fontName="Flow Block"
+                    fontSize="fontSizeBody"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontAlt"
+                    fontName="Flow Block"
+                    fontSize="fontSizeSubhead"
+                    sampleText="Lorem Ipsum 123"
+                  />
+                  <FontExample
+                    font="fontAlt"
+                    fontName="Flow Block"
+                    fontSize="fontSizeHeading"
+                    sampleText="Lorem Ipsum 123"
+                  />
+               </div>
+               
              </Container>
             </section>
 
@@ -139,9 +220,17 @@ export default function Home({ allPostsData }) {
                     When a text link has no set class, it will use <a href="/styleguide">$accentColor</a> as its text-color, with a <a href="/styleguide">dotted underline</a> that changes to solid on hover.
                   </p>
                   <hr/>
-                  <p>
-                    When a text link has no set class, it will use <a href="/styleguide">$accentColor</a> as its text-color, with a <a href="/styleguide">dotted underline</a> that changes to solid on hover.
-                  </p>
+                  <Button 
+                    text="Regular Button"
+                    href="/"
+                    target="_blank"
+                  />
+                  <Button 
+                    text="Alt Button"
+                    href="/"
+                    target="_blank"
+                    buttonStyle="alt"
+                  />
                 </div>
               </Container>
              </section>
@@ -158,10 +247,12 @@ export default function Home({ allPostsData }) {
              <section className={pageStyles.textSection}>
                <Container>
                  <h2>PlaceholderContent</h2>
-                 <p>Use this component to fill in missing content.</p>
+                 <p>Use this component to fill in missing content and indicate that it will be replaced with other content.</p>
                  <br/>
                  <div className={pageStyles.styleContainer}>
-                   <PlaceholderContent/>
+                   <PlaceholderContent>
+                     The PlaceholderContent component can be left empty, or you can give it a message to indiciate what it will be replaced with.
+                   </PlaceholderContent>
                  </div>
                </Container>
               </section>

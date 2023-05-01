@@ -11,7 +11,7 @@ import componentStyles from './styles.module.scss'
 
 export default function FontExample({ 
   //Props
-  children, font, fontSize, 
+  children, font, fontName, fontSize, 
   fontWeight, fontStyle, color, 
   sampleText, details
 }) {
@@ -30,7 +30,7 @@ export default function FontExample({
       data-font-color={color}
     >
       <div className={componentStyles.fontMeta}>
-        <p>Font Name: "Roboto Mono"</p>
+        <p>Font Name: "{fontName}"</p>
         <p>Font Var: ${font}</p>
         <p>Font Size: ${fontSize}</p>
       </div>
