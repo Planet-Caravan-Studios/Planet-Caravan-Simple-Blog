@@ -1,0 +1,70 @@
+/*========================================*/
+//	MasterComponent
+//	
+//	Clone this component out to make 
+//	new components.
+//	
+/*========================================*/
+
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+/* ========================= */
+/* ===== Main Component ===== */
+/* ========================= */
+.VersionNotice{
+	position: fixed;
+	$offset: 1vw; 
+	left: $offset;
+	bottom: $offset;
+	
+}
+
+/* ===================== */
+/* ===== IconWidget ===== */
+/* ===================== */
+.IconWidget{
+	border: $border1;
+	width: 2rem;
+	aspect-ratio: 1/1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: $black;
+	background-color: $white;
+	&:hover{
+		color: $white;
+		background-color: $black;
+	}
+
+	.inner{
+		position: relative;
+		top: 8%;
+	}
+}
+
+/* ===================== */
+/* ===== NoticeInfo ===== */
+/* ===================== */
+.NoticeInfo{
+	border: $border1;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	color: $black;
+	background-color: $white;
+	padding: 1em;
+	&:hover{
+		color: $white;
+		background-color: $black;
+	}
+
+	ul{
+		margin: 0;
+		//padding: 0;
+	}
+	
+}

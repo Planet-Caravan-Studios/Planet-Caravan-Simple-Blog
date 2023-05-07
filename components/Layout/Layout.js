@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import $ from 'jquery'
+import VersionNotice from '@components/UtilityComponents/VersionNotice'
 
 /*===== Theme Components =====*/
 import DesktopNav from '@components/NavigationComponents/DesktopNav'
@@ -82,7 +83,16 @@ export default function Layout({ children, home }) {
       </main>
 
       <Footer/>
-      
+      <VersionNotice
+        versionNumber="0.1.1"
+        updatePercentComplete="33"
+        totalPercentComplete="75"
+      >
+        Notes Test
+        <ul>
+          <li>list test</li>
+        </ul>
+      </VersionNotice>
 
     </div>
   )
