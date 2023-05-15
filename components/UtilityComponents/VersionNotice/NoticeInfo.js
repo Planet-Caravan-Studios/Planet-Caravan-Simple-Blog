@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { BsCodeSlash } from "react-icons/bs";
 
 /*===== Theme Components =====*/
-
+import ProgressBar from './ProgressBar'
 
 /*===== Styles =====*/
 import componentStyles from './styles.module.scss'
@@ -17,19 +17,29 @@ export default function NoticeInfo({
   totalPercentComplete, notes, currentUpdate, nextUpdate
 }) {
 
+
   //JS Goes Here
   //console.log(title);
    useEffect(() => {});
 
   return (
     <div 
+      id="VersionInfoBox"
       className={componentStyles.NoticeInfo}
+      data-active="inactive"
     >
       
       <div className={componentStyles.version}>
-        <div>v.{versionNumber}</div>
-        <div>Sprint Completion: {updatePercentComplete}%</div>
-        <div>Total Completion: {totalPercentComplete}%</div>
+        <div className={componentStyles.cell}>v.{versionNumber}</div>
+        <div className={componentStyles.cell}>
+          Sprint Completion: {updatePercentComplete}
+          <ProgressBar progress={updatePercentComplete}/>
+        </div>
+        <div className={componentStyles.cell}>
+          Total Completion: {totalPercentComplete}
+          <ProgressBar progress={totalPercentComplete}/>
+        </div>
+        
       </div>
       
       <hr/>

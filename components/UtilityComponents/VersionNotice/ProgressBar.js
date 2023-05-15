@@ -11,10 +11,9 @@ import { BsCodeSlash } from "react-icons/bs";
 import componentStyles from './styles.module.scss'
 
 
-export default function IconWidget({ 
+export default function ProgressBar({ 
   //Props
-  children, id, title, image, imgAlt, 
-  backgroundColor, font, 
+  children, id, progress
 }) {
 
   //JS Goes Here
@@ -23,11 +22,14 @@ export default function IconWidget({
 
   return (
     <div 
-      id="VersionInfoIcon"
-      className={componentStyles.IconWidget}
-      data-bg-color={backgroundColor}
+      className={componentStyles.ProgressBar}
+      data-progress={progress ? progress : '0%'}
     >
-      <span className={componentStyles.inner}><BsCodeSlash/></span>
+      <div 
+        className={componentStyles.progress} 
+        /*style={progressStyle}*/
+        style={{ width: progress ? progress : '0%' }}
+      ></div>
     </div>
   )
 }

@@ -6,12 +6,11 @@ import Link from 'next/link'
 /*===== Theme Components =====*/
 import IconWidget from './IconWidget'
 import NoticeInfo from './NoticeInfo'
-import Data from './Data'
 
 /*===== Styles =====*/
 import componentStyles from './styles.module.scss'
 
-export default function VersionNotice({ 
+export default function Data({ 
   //Props
   children, versionNumber, updatePercentComplete,
   totalPercentComplete, notes, currentUpdate, nextUpdate
@@ -54,15 +53,18 @@ export default function VersionNotice({
    });
 
   return (
-    <div className={componentStyles.VersionNotice}>
+    <>
       <NoticeInfo
-        versionNumber={versionNumber}
-        updatePercentComplete={updatePercentComplete}
-        totalPercentComplete={totalPercentComplete}
-        notes={children}
-      />
-      {/*<Data/>*/}
-      <IconWidget/>
-    </div>
+        versionNumber="0.1.1"
+        updatePercentComplete="33%"
+        totalPercentComplete="75%"
+      >
+        <ul>
+          <li>Previous Update - Styleguide page</li>
+          <li>Latest Update - Version Info component</li>
+          <li>Next Update - Device &amp; Browser detection</li>
+        </ul>
+      </NoticeInfo>
+    </>
   )
 }

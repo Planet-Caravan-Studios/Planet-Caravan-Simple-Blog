@@ -40,6 +40,7 @@ export default function Layout({ children, home }) {
 
   return (
     <div id="LayoutOuter" className={styles.outer} data-hidden="true">
+      
       <Head>
         <link rel="icon" href="/favicon.png" />
         <meta
@@ -83,14 +84,17 @@ export default function Layout({ children, home }) {
       </main>
 
       <Footer/>
+      
+      {/* VERSION NOTICE */}
       <VersionNotice
         versionNumber="0.1.1"
-        updatePercentComplete="33"
-        totalPercentComplete="75"
+        updatePercentComplete="33%"
+        totalPercentComplete="75%"
       >
-        Notes Test
         <ul>
-          <li>list test</li>
+          <li>Previous Update - Styleguide page</li>
+          <li>Latest Update - Version Info component</li>
+          <li>Next Update - Device &amp; Browser detection</li>
         </ul>
       </VersionNotice>
 
