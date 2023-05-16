@@ -38,9 +38,9 @@ function fullPageLoad () {
   console.log("script.js loaded");
 
 
-  /* ============================= */
-  /* ===== Simple Autoscroll ===== */
-  /* ============================= */
+/* ============================ */
+/* ===== Simple Autoscroll ===== */
+/* ============================ */
     // Add a click event listener to all links on the page
     /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
