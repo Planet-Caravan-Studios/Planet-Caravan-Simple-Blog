@@ -76,10 +76,9 @@ export default function Layout({ children, home }) {
             </Container>
           )}*/}
           
-          <div>
+          <div id="LayoutInner">
             {children}
           </div>
-          
         
       </main>
 
@@ -88,8 +87,8 @@ export default function Layout({ children, home }) {
       {/* VERSION NOTICE */}
       <VersionNotice
         versionNumber="0.1.1"
-        updatePercentComplete="33%"
-        totalPercentComplete="75%"
+        updatePercentComplete="10%"
+        totalPercentComplete="65%"
       >
         <ul>
           <li>Previous Update - Styleguide page</li>
