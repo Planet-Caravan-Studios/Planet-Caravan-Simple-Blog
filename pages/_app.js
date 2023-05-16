@@ -10,6 +10,9 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/thumbs/thumbs.scss';
 
+//Device Detection
+import {isSafari, browserName, osName} from 'react-device-detect';
+
 //Custom CSS/JS
 import '@styles/main.scss'
 import '@scripts/script.js';
@@ -45,6 +48,18 @@ export default function App({ Component, pageProps }) {
               $("#LayoutOuter").attr("data-hidden", "false");
           }, bufferTime);
         }
+
+        /* ================================= */
+        /* ===== Browser/Device Detect  ===== */
+        /* ================================= */
+          function deviceDetect(){
+            let element = document.querySelector("#LayoutOuter");
+            element.classList.add('browser--detect--'+browserName);
+            element.classList.add('device--detect--'+osName);
+          }
+          //run function
+          deviceDetect();
+
       });
 
       /* =====END useEffect ===== */
