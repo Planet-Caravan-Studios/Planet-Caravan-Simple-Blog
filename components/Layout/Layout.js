@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import $ from 'jquery'
+import VersionNotice from '@components/UtilityComponents/VersionNotice'
 
 /*===== Theme Components =====*/
 import DesktopNav from '@components/NavigationComponents/DesktopNav'
@@ -39,6 +40,7 @@ export default function Layout({ children, home }) {
 
   return (
     <div id="LayoutOuter" className={styles.outer} data-hidden="true">
+      
       <Head>
         <link rel="icon" href="/favicon.png" />
         <meta
@@ -74,15 +76,26 @@ export default function Layout({ children, home }) {
             </Container>
           )}*/}
           
-          <div>
+          <div id="LayoutInner">
             {children}
           </div>
-          
         
       </main>
 
       <Footer/>
       
+      {/* VERSION NOTICE */}
+      <VersionNotice
+        versionNumber="0.1.1"
+        updatePercentComplete="10%"
+        totalPercentComplete="65%"
+      >
+        <ul>
+          <li>Previous Update - Styleguide page</li>
+          <li>Latest Update - Version Info component</li>
+          <li>Next Update - Device &amp; Browser detection</li>
+        </ul>
+      </VersionNotice>
 
     </div>
   )
