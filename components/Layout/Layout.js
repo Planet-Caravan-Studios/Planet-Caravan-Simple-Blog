@@ -86,14 +86,14 @@ export default function Layout({ children, home }) {
       
       {/* VERSION NOTICE */}
       <VersionNotice
-        versionNumber="0.1.1"
-        updatePercentComplete="10%"
-        totalPercentComplete="65%"
+        versionNumber="0.1.5"
+        updatePercentComplete="50%"
+        totalPercentComplete="85%"
       >
         <ul>
-          <li>Previous Update - Styleguide page</li>
-          <li>Latest Update - Version Info component</li>
-          <li>Next Update - Device &amp; Browser detection</li>
+          <li>Previous Update - Device &amp; Browser detection</li>
+          <li>Latest Update - Links</li>
+          <li>Next Update - JS Actions</li>
         </ul>
       </VersionNotice>
 

@@ -10,7 +10,7 @@ const nextConfig = {
   },
 
   //TRAILING SLASHES
-  trailingSlash: false,
+  trailingSlash: true,
 
   //REDIRECTS
   async redirects() {

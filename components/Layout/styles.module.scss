@@ -2,9 +2,12 @@
 
 .outer{
   display: block;
+  position: relative;
   opacity: 1;
   pointer-events: auto;
   transition: $transitionMedium;
+  background-color: $backgroundColor;
+  z-index:1;
 
   &[data-hidden="true"]{
     opacity: 0;
