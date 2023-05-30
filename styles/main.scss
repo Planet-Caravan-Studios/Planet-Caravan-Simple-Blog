@@ -31,6 +31,21 @@ body {
   overflow-x: hidden;
 }
 
+body:before{
+  content:'';
+  width: 75%;
+  height: 75%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  z-index: 0;
+  background-image: url("/images/planet-caravan-studios-logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 //Border-Box reset
 *,
 *:before,
@@ -81,6 +96,7 @@ hr{
 h1, h2, h3, h4, h5, h6{
   line-height: 1.2;
   margin: 0;
+  margin-bottom: 0.25em;
   font-size: $clampLarge;
 }
 
