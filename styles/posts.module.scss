@@ -43,6 +43,15 @@
 				margin-bottom: 0px;
 			}
 		}
+
+		blockquote{
+			border: $border1;
+			padding: $clampMedium;
+			margin: $clampMedium;
+			p:last-child{
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 

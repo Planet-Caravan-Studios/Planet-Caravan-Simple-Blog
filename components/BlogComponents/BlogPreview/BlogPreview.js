@@ -36,7 +36,20 @@ export default function BlogPreview({
       }
        
         
-        <a href={path ? `/${path}/${id}` : `/posts/${id}`} className={componentStyles.title}>{title}</a>
+        <a href={path ? `/${path}/${id}` : `/posts/${id}`} className={componentStyles.title}>
+          {title}
+        </a>
+
+         <div className={componentStyles.postMetas}>
+          {author &&
+            <span className={componentStyles.author}>{author} | </span>
+          }
+          {date &&
+            <span className={componentStyles.date}>
+              <Date dateString={date}  />
+            </span>
+          }          
+        </div>
         
         {previewText && 
           <p className={componentStyles.previewText}>
@@ -49,23 +62,14 @@ export default function BlogPreview({
              text="READ MORE"
           />
         </div>
-        <div className={componentStyles.postMetas}>
-          {author &&
-            <span className={componentStyles.author}>{author} | </span>
-          }
-          {date &&
-            <span className={componentStyles.date}>
-              <Date dateString={date}  />
-            </span>
-          }          
-        </div>
-        <SocialIcons
+       
+        {/*<SocialIcons
           instagram="#"
           facebook="#"
           twitter="#"
           tumblr="#"
           pinterest="#"
-        />
+        />*/}
       
     </div>
   )
