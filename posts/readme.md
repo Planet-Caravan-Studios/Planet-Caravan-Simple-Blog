@@ -3,7 +3,7 @@ title: "README"
 date: "2022-08-03"
 author: "Alec Reimel"
 
-image: "/images/hm-hero-img.jpg"
+image: "/images/color-sample-1.jpg"
 previewText: "Copy of this project's readme file"
 ---
 

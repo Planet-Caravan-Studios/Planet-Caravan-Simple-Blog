@@ -3,7 +3,7 @@ title: "ChatGPT Prompts for Frontend Dev"
 date: "2023-04-03"
 author: "Alec Reimel"
 
-image: "/images/hm-hero-img.jpg"
+image: "/images/color-sample-1.jpg"
 previewText: "I asked ChatGPT to creat an ideal prompt for asking frontend dev questions."
 ---
 
