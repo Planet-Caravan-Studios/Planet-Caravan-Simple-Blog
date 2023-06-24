@@ -3,11 +3,11 @@ title: "Master Post Template"
 date: "2022-08-03"
 author: "Alec Reimel"
 
-image: "/images/color-sample-1.jpg"
+image: "/images/color-sample-2.jpg"
 previewText: "Copy this post for any new posts"
 ---
 
-![Color Sample 1](/images/color-sample-1.jpg "Color Sample 1")
+![Color Sample 2](/images/color-sample-2.jpg "Color Sample 2")
 
 
 ## H2 Heading
@@ -19,13 +19,17 @@ There should only ever be 1 H1 tag on a page
 
 ---
 
+## Links
+
+[link text - goes to styleguide page](/styleguide)
+
 ## Emphasis
 
 **This is bold text**, and *This is italic text*.
 
 ## Symbols
 
-&amp; | &copy;
+&amp; | &copy; | &reg; | &trade; | &euro; | &pound; | &le; | &ge; | &ne; | &dagger; | &Dagger; | &bull;
 
 ## Code
  `Basic code highlighting`
@@ -33,7 +37,10 @@ There should only ever be 1 H1 tag on a page
 
 ## Blockquotes
 
-> Blockquotes have an outline and different text treatment.
+> ### Headings in Blockquotes
+> Use Blockquotes to call out specific text.
+> 
+> Multiple lines of text within blockquotes.
 
 
 ## Lists
@@ -45,7 +52,5 @@ There should only ever be 1 H1 tag on a page
 
 
 
-## Links
 
-[link text - goes to styleguide page](/styleguide)
 
