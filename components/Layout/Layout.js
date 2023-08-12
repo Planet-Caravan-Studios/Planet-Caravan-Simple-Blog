@@ -40,7 +40,6 @@ export default function Layout({ children, home }) {
 
   return (
     <div id="LayoutOuter" className={styles.outer} data-hidden="true">
-      
       <Head>
         <link rel="icon" href="/favicon.png" />
         <meta
@@ -56,6 +55,8 @@ export default function Layout({ children, home }) {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+
       </Head>
 
       <DesktopNav/>
@@ -84,19 +85,21 @@ export default function Layout({ children, home }) {
 
       <Footer/>
       
-      {/* VERSION NOTICE */}
-      <VersionNotice
-        versionNumber="0.1.5"
-        updatePercentComplete="50%"
-        totalPercentComplete="85%"
-      >
-        <ul>
-          <li>Previous Update - Device &amp; Browser detection</li>
-          <li>Latest Update - Links</li>
-          <li>Next Update - JS Actions</li>
-        </ul>
-      </VersionNotice>
-
+      {process.env.NEXT_PUBLIC_FEATURE_VERSION_NOTICE=='true' && 
+        <VersionNotice
+          versionNumber="0.1.5"
+          updatePercentComplete="50%"
+          totalPercentComplete="85%"
+        >
+          <ul>
+            <li>Previous Update - Device &amp; Browser detection</li>
+            <li>Latest Update - Links</li>
+            <li>Next Update - JS Actions</li>
+          </ul>
+        </VersionNotice>
+      }
+      
+      <h1>{process.env.NEXT_PUBLIC_FEATURE_VERSION_NOTICE ? process.env.NEXT_PUBLIC_FEATURE_VERSION_NOTICE : "VAR NOT PRESENT"}</h1>
     </div>
   )
 }
