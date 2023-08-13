@@ -98,8 +98,7 @@ export default function Layout({ children, home }) {
           </ul>
         </VersionNotice>
       }
-      
-      <h1>{process.env.NEXT_PUBLIC_FEATURE_VERSION_NOTICE ? process.env.NEXT_PUBLIC_FEATURE_VERSION_NOTICE : "VAR NOT PRESENT"}</h1>
+
     </div>
   )
 }
