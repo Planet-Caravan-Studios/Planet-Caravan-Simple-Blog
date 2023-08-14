@@ -55,13 +55,9 @@ When you start the project, check in with the projects's Analyst for the followi
 * [react-headroom](https://kyleamathews.github.io/react-headroom/)
 
 ### Coming Features ###
-* Contact page
-* About page - == In Progress ==
-* [Arbitrary JSON data usage](https://vercel.com/guides/loading-static-file-nextjs-api-route) - == Complete ==
-* [Category and tag filtering on blog pages](https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops/)
-* lodash - js utility library
-* browsersync - sync multiple browser windows
 * Form integration - netilfy forms
+* Progressive Web App (PWA) functions
+* Algolia Search
 
 ### Article Links ###
 * [Set up Google Analytics with react-ga](https://medium.com/@cooperwfloyd/the-most-simple-way-to-track-next-js-page-views-in-google-analytics-8a5c6d981f43)
