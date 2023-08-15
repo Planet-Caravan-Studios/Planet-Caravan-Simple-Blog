@@ -3,7 +3,10 @@
  */
 
 const withPWA = require('next-pwa')({
-  dest: 'public'
+  dest: 'public',
+  register: true,
+  scope: '/',
+  sw: 'service-worker.js'
 })
 
 module.exports = withPWA({

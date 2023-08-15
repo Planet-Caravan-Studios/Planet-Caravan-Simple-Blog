@@ -42,6 +42,7 @@ export default function Layout({ children, home }) {
   return (
     <div id="LayoutOuter" className={styles.outer} data-hidden="true">
       <Head>
+      <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.png" />
         <meta
           name="description"

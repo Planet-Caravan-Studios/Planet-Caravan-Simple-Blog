@@ -31,7 +31,7 @@ export default function Layout({ children, home }) {
 
       <link rel="icon" type="image/png" sizes="32x32" href="/pwa-assets/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/pwa-assets/favicon-16x16.png" />
-      <link rel="manifest" href="/manifest.json" />
+      
       {/*<link rel="mask-icon" href="/pwa-assets/safari-pinned-tab.svg" color="#5bbad5" />*/}
       {/*<link rel="shortcut icon" href="/favicon.ico" />*/}
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
