@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import $ from 'jquery'
 import VersionNotice from '@components/UtilityComponents/VersionNotice'
+import PwaMetas from './PwaMetas'
 
 /*===== Theme Components =====*/
 import DesktopNav from '@components/NavigationComponents/DesktopNav'
@@ -51,6 +52,8 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteData.siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+
+        <PwaMetas/>
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
