@@ -1,6 +1,6 @@
 {
-  "name": "PWA App",
-  "short_name": "App",
+  "name": "Planet Caravan PWA App",
+  "short_name": "Planet Caravan",
   "icons": [
     {
       "src": "/pwa-assets/android-chrome-192x192.png",
