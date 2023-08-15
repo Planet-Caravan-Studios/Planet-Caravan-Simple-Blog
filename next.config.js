@@ -1,7 +1,16 @@
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
+
+const withPWA = require('next-pwa')({
+  dest: 'public',
+  register: true,
+  scope: '/',
+  sw: 'service-worker.js'
+})
+
+module.exports = withPWA({
+  // next.js config
   /* config options here */
 
   //IMAGE LOADER
@@ -23,6 +32,5 @@ const nextConfig = {
     ]
   }
 
-}
+})
 
-module.exports = nextConfig
