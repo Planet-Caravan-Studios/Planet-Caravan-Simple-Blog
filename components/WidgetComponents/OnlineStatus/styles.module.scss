@@ -1,0 +1,25 @@
+/*========================================*/
+//	OnlineStatus	
+/*========================================*/
+
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+/* ========================= */
+/* ===== Main Component ===== */
+/* ========================= */
+.OnlineStatus{
+	display: block;
+	font-size: $clampExtraSmall;
+	position: fixed;
+	bottom: 1em;
+	left: 50%;
+	transform: translate3d(-50%, 0px, 0px);
+	border: $border1;
+	padding: 0.5em 1em;
+	background: $white;
+	color: $black;
+}
+

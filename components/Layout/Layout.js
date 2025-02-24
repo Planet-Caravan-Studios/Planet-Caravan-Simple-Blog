@@ -6,6 +6,7 @@ import Link from 'next/link'
 import $ from 'jquery'
 import VersionNotice from '@components/UtilityComponents/VersionNotice'
 import PwaMetas from './PwaMetas'
+import OnlineStatus from '@components/WidgetComponents/OnlineStatus'
 
 /*===== Theme Components =====*/
 import DesktopNav from '@components/NavigationComponents/DesktopNav'
@@ -88,7 +89,7 @@ export default function Layout({ children, home }) {
       </main>
 
       <Footer/>
-      
+      <OnlineStatus/>
       {process.env.NEXT_PUBLIC_FEATURE_VERSION_NOTICE=='true' && 
         <VersionNotice
           versionNumber="0.1.5"
